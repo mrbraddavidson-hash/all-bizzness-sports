@@ -843,3 +843,40 @@ h2 span { color: var(--silver); }
     gap: 10px;
   }
 }
+
+/* The logo now leads the Redline hero directly beneath the local-to-big-league cue. */
+.redline-page .hero {
+  display: block;
+  min-height: auto;
+  padding-top: 62px;
+  padding-bottom: 92px;
+}
+
+.redline-page .hero-copy {
+  max-width: 100%;
+}
+
+.redline-page .hero-copy .eyebrow {
+  margin-bottom: 18px;
+}
+
+.redline-page .hero-copy .hero-art {
+  width: min(100%, 530px);
+  margin: 0 auto 58px;
+}
+
+.redline-page .hero-copy h1 {
+  max-width: 760px;
+}
+
+@media (max-width: 640px) {
+  .redline-page .hero {
+    padding-top: 50px;
+    padding-bottom: 72px;
+  }
+
+  .redline-page .hero-copy .hero-art {
+    width: min(100%, 360px);
+    margin-bottom: 44px;
+  }
+}
