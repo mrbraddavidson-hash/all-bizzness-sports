@@ -494,3 +494,58 @@ h2 span { color: var(--silver); }
   .redline-page .intro::before { top: 88px; width: 28%; }
   .redline-page .art-frame { box-shadow: 16px 16px 0 rgba(239,30,50,.72), 0 22px 40px rgba(0,0,0,.48); }
 }
+
+.redline-page .site-nav .facebook-link {
+  color: var(--red);
+}
+
+.redline-page .site-nav .facebook-link:hover,
+.redline-page .site-nav .facebook-link:focus-visible {
+  color: var(--paper);
+}
+
+.redline-page .button-social {
+  color: var(--paper);
+  background: transparent;
+  border-color: var(--red);
+  box-shadow: 5px 5px 0 rgba(225, 29, 46, .35);
+}
+
+.redline-page .button-social:hover,
+.redline-page .button-social:focus-visible {
+  background: var(--red);
+}
+
+.redline-page .button-facebook-light {
+  margin-left: 8px;
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.redline-page .button-facebook-light:hover,
+.redline-page .button-facebook-light:focus-visible {
+  background: #1e1e1e;
+}
+
+.redline-page .footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.redline-page .footer-social:hover,
+.redline-page .footer-social:focus-visible {
+  color: var(--paper);
+}
+
+@media (max-width: 560px) {
+  .redline-page .button-facebook-light {
+    margin: 8px 0 0;
+  }
+}
