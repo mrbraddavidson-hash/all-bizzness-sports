@@ -314,3 +314,169 @@ h1 em { color: var(--red); font-style: normal; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+/* 16—35 / the second wave folded into the original set */
+.more-card .concept-preview { color: #fff; }
+.more-card .preview-mark { position: absolute; z-index: 5; top: 16px; right: 18px; color: currentColor; font-size: 28px; font-weight: 900; letter-spacing: -.14em; line-height: .72; text-align: right; }
+.more-card .preview-mark small { display: block; margin-top: 7px; font-family: monospace; font-size: 7px; font-weight: 800; letter-spacing: .08em; }
+.more-card .preview-mark span { color: var(--more-accent, #e82032); }
+.more-card .preview-copy { z-index: 6; right: 20px; bottom: 24px; left: 20px; }
+.more-card .preview-copy h2 { color: currentColor; font-size: clamp(2.6rem, 4.7vw, 4.35rem); line-height: .8; }
+.more-card .preview-copy h2 em { color: var(--more-accent, #e82032); font-style: normal; }
+.more-card .preview-copy p { max-width: 250px; color: currentColor; opacity: .76; }
+.more-card .preview-ticker { z-index: 6; }
+.more-card .preview-stat { z-index: 6; }
+.more-card .preview-stamp,
+.more-card .preview-code,
+.more-card .preview-ring,
+.more-card .preview-sun,
+.more-card .preview-wave,
+.more-card .preview-block,
+.more-card .preview-x,
+.more-card .preview-side,
+.more-card .preview-prism,
+.more-card .preview-bars,
+.more-card .preview-live,
+.more-card .preview-sunburst,
+.more-card .preview-horizon,
+.more-card .preview-frame,
+.more-card .preview-sticker,
+.more-card .preview-line,
+.more-card .preview-grid,
+.more-card .preview-orb,
+.more-card .preview-moon,
+.more-card .preview-starfield,
+.more-card .preview-flag,
+.more-card .preview-rays,
+.more-card .preview-disc,
+.more-card .preview-bloom,
+.more-card .preview-pixel,
+.more-card .preview-woodcut,
+.more-card .preview-bubble { position: absolute; }
+
+/* 16 — Newsprint Dispatch */
+.more-card.more-style-01 .concept-preview, .modal-swatch.more-style-01 { --more-accent: #c8202d; color: #242323; background: #e8e2d1; }
+.more-card.more-style-01 .concept-preview::before, .modal-swatch.more-style-01::before { z-index: 1; top: -10%; bottom: -10%; left: 57%; width: 2px; background: #c8202d; box-shadow: 18px 0 #242323, 37px 0 #c8202d, 75px 0 rgba(36,35,35,.3); transform: rotate(9deg); }
+.more-card.more-style-01 .preview-mark { color: #c8202d; }
+.preview-stamp { z-index: 5; top: 28%; right: 19px; padding: 8px; border: 1px solid currentColor; color: #c8202d; font-family: monospace; font-size: 8px; line-height: 1.1; text-align: center; transform: rotate(8deg); }
+
+/* 17 — Acid Console */
+.more-card.more-style-02 .concept-preview, .modal-swatch.more-style-02 { --more-accent: #f4ff00; color: #d8ff00; background: #111812; }
+.more-card.more-style-02 .concept-preview::before, .modal-swatch.more-style-02::before { z-index: 1; top: 10%; right: -10%; width: 68%; aspect-ratio: 1; border: 1px solid rgba(216,255,0,.8); border-radius: 50%; box-shadow: 0 0 0 20px rgba(216,255,0,.07), 0 0 55px rgba(216,255,0,.25); }
+.more-card.more-style-02 .concept-preview::after, .modal-swatch.more-style-02::after { background-image: linear-gradient(rgba(216,255,0,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(216,255,0,.12) 1px, transparent 1px); background-size: 20px 20px; opacity: .6; mix-blend-mode: normal; }
+.more-card.more-style-02 .preview-mark { padding: 8px 10px; background: #d8ff00; color: #111812; font-size: 22px; }
+.preview-code { z-index: 5; top: 31%; right: 25%; color: rgba(216,255,0,.55); font-family: monospace; font-size: 11px; line-height: 1.4; }
+
+/* 18 — Ice Breaker */
+.more-card.more-style-03 .concept-preview, .modal-swatch.more-style-03 { --more-accent: #198fa9; color: #1b3d4b; background: #e4f0f4; }
+.more-card.more-style-03 .concept-preview::before, .modal-swatch.more-style-03::before { z-index: 1; top: -23%; right: -12%; width: 74%; aspect-ratio: 1; border-radius: 50%; background: linear-gradient(135deg, rgba(255,255,255,.82), rgba(99,203,223,.4)); }
+.more-card.more-style-03 .preview-mark { display: grid; width: 53px; height: 53px; place-items: center; border: 1px solid #1b3d4b; border-radius: 50%; font-size: 22px; letter-spacing: -.08em; }
+.preview-ring { z-index: 2; top: 21%; left: 16%; width: 84px; height: 84px; border: 1px solid rgba(25,143,169,.45); border-radius: 50%; }
+
+/* 19 — Sunset FM */
+.more-card.more-style-04 .concept-preview, .modal-swatch.more-style-04 { --more-accent: #0b3546; color: #fff4cf; background: linear-gradient(150deg, #ffb248, #f04a4f 47%, #4a216d); }
+.more-card.more-style-04 .concept-preview::before, .modal-swatch.more-style-04::before { z-index: 1; right: -16%; bottom: 8%; width: 75%; aspect-ratio: 1; border-radius: 50%; background: rgba(255,216,85,.72); box-shadow: 0 0 0 26px rgba(255,216,85,.12); }
+.more-card.more-style-04 .preview-sun { z-index: 3; top: 30%; right: 17%; width: 94px; height: 94px; border-radius: 50%; background: #ffd855; }
+.preview-wave { z-index: 5; top: 44%; right: 20px; color: #fff4cf; font-size: 56px; letter-spacing: -.2em; opacity: .7; transform: rotate(-12deg); }
+
+/* 20 — Primary Playbook */
+.more-card.more-style-05 .concept-preview, .modal-swatch.more-style-05 { --more-accent: #e4362b; color: #111827; background: #f4ecd2; }
+.more-card.more-style-05 .concept-preview::before, .modal-swatch.more-style-05::before { z-index: 1; inset: 0; background: linear-gradient(90deg, transparent 0 46%, rgba(17,24,39,.12) 46% 47%, transparent 47%); }
+.preview-block { z-index: 2; width: 30%; aspect-ratio: 1; }
+.block-red { top: 17%; left: 16%; background: #e4362b; transform: rotate(12deg); }
+.block-blue { top: 12%; right: 11%; background: #2563a5; transform: rotate(-15deg); }
+.block-yellow { right: 25%; bottom: 21%; width: 15%; background: #f3c745; transform: rotate(45deg); }
+
+/* 21 — No Rules Type */
+.more-card.more-style-06 .concept-preview, .modal-swatch.more-style-06 { --more-accent: #101010; color: #101010; background: #f03b3c; }
+.more-card.more-style-06 .concept-preview::before, .modal-swatch.more-style-06::before { z-index: 1; top: -33%; right: -4%; width: 70%; height: 150%; border: 1px solid rgba(16,16,16,.6); transform: rotate(25deg); }
+.more-card.more-style-06 .preview-mark { padding: 6px 11px; background: #101010; color: #f03b3c; }
+.preview-x { z-index: 4; top: 23%; right: 36%; color: rgba(16,16,16,.23); font-size: 10rem; font-weight: 900; line-height: .6; }
+.preview-side { z-index: 5; top: 34%; right: 20px; padding-right: 9px; border-right: 2px solid #101010; font-family: monospace; font-size: 8px; line-height: 1.5; text-align: right; }
+
+/* 22 — Prism League */
+.more-card.more-style-07 .concept-preview, .modal-swatch.more-style-07 { --more-accent: #eaff35; color: #faf9f2; background: linear-gradient(135deg, #211438, #1c174e 48%, #082a3a); }
+.more-card.more-style-07 .concept-preview::before, .modal-swatch.more-style-07::before { z-index: 1; top: -32%; left: 4%; width: 75%; aspect-ratio: 1; border-radius: 50%; background: conic-gradient(from 40deg, #ff4e91, #ffef4f, #45e6ff, #8e57ff, #ff4e91); }
+.preview-prism { z-index: 3; width: 23%; height: 48%; clip-path: polygon(50% 0,100% 100%,0 100%); opacity: .6; }
+.prism-one { top: 26%; right: 30%; background: #45e6ff; transform: rotate(23deg); }
+.prism-two { top: 35%; right: 16%; background: #ff4e91; transform: rotate(-19deg); }
+.prism-three { top: 19%; right: 43%; background: #ffef4f; transform: rotate(5deg); }
+
+/* 23 — Channel 24 */
+.more-card.more-style-08 .concept-preview, .modal-swatch.more-style-08 { --more-accent: #ffd12f; color: #fff8e6; background: #ff6a00; }
+.more-card.more-style-08 .concept-preview::before, .modal-swatch.more-style-08::before { z-index: 1; inset: 0; background: repeating-linear-gradient(0deg, transparent 0 12px, rgba(65,17,0,.13) 13px 14px); }
+.more-card.more-style-08 .preview-mark { color: #ffd12f; font-size: 44px; }
+.preview-bars { z-index: 4; top: 22%; right: 24%; display: flex; align-items: end; gap: 5px; height: 56px; }
+.preview-bars i { display: block; width: 7px; background: #fff8e6; }
+.preview-bars i:nth-child(1) { height: 19px; }.preview-bars i:nth-child(2) { height: 38px; }.preview-bars i:nth-child(3) { height: 27px; }.preview-bars i:nth-child(4) { height: 52px; }
+.preview-live { z-index: 5; top: 33%; right: 20px; color: #ffd12f; font-family: monospace; font-size: 9px; }
+
+/* 24 — Dust Bowl Sports */
+.more-card.more-style-09 .concept-preview, .modal-swatch.more-style-09 { --more-accent: #b52d1f; color: #3b211b; background: #d7b57e; }
+.more-card.more-style-09 .concept-preview::before, .modal-swatch.more-style-09::before { z-index: 1; right: -11%; bottom: -26%; width: 74%; aspect-ratio: 1; border: 1px solid rgba(59,33,27,.55); border-radius: 50%; box-shadow: 0 0 0 13px rgba(59,33,27,.07), 0 0 0 26px rgba(59,33,27,.07); }
+.preview-sunburst { z-index: 2; top: 13%; right: 17%; width: 126px; height: 126px; border-radius: 50%; background: repeating-conic-gradient(#b52d1f 0 5deg, transparent 5deg 12deg); opacity: .72; }
+.preview-horizon { z-index: 2; right: 0; bottom: 0; left: 0; height: 31%; background: #5a3b2a; clip-path: polygon(0 48%,20% 42%,36% 55%,58% 35%,77% 53%,100% 32%,100% 100%,0 100%); opacity: .75; }
+
+/* 25 — Film Room */
+.more-card.more-style-10 .concept-preview, .modal-swatch.more-style-10 { --more-accent: #e0a947; color: #e9debe; background: #253029; }
+.more-card.more-style-10 .concept-preview::before, .modal-swatch.more-style-10::before { z-index: 1; top: 12%; right: -4%; width: 78%; height: 68%; border: 1px solid rgba(224,169,71,.46); background: repeating-linear-gradient(90deg, transparent 0 22px, rgba(224,169,71,.1) 23px 24px); transform: skewY(-9deg); }
+.preview-frame { z-index: 2; border: 1px solid rgba(233,222,190,.5); background: rgba(233,222,190,.08); transform: rotate(-9deg); }
+.frame-one { top: 20%; left: 18%; width: 68px; height: 47px; }.frame-two { top: 29%; left: 31%; width: 68px; height: 47px; }.frame-three { top: 38%; left: 44%; width: 68px; height: 47px; }
+
+/* 26 — Sticker League */
+.more-card.more-style-11 .concept-preview, .modal-swatch.more-style-11 { --more-accent: #1d5cff; color: #1b1c31; background: #f5ea40; }
+.more-card.more-style-11 .concept-preview::before, .modal-swatch.more-style-11::before { z-index: 1; top: 0; right: 0; width: 47%; height: 100%; background: #fb4f96; clip-path: polygon(20% 0,100% 0,100% 100%,0 100%); }
+.more-card.more-style-11 .preview-mark { padding: 4px 8px; border: 2px solid #1b1c31; border-radius: 10px; background: #fff5ed; color: #1b1c31; transform: rotate(9deg); }
+.preview-sticker { z-index: 4; display: grid; place-items: center; width: 44px; height: 44px; border: 2px solid #1b1c31; border-radius: 50%; background: #fff5ed; color: #fb4f96; font-size: 28px; font-weight: 900; }
+.sticker-star { top: 20%; left: 22%; transform: rotate(-14deg); }.sticker-ball { top: 22%; left: 40%; background: #1d5cff; color: #f5ea40; transform: rotate(11deg); }.sticker-lightning { top: 38%; left: 30%; background: #fb4f96; color: #f5ea40; transform: rotate(-7deg); }
+
+/* 27 — White Space Club */
+.more-card.more-style-12 .concept-preview, .modal-swatch.more-style-12 { --more-accent: #ee654f; color: #21403b; background: #f4f1e9; }
+.more-card.more-style-12 .concept-preview::before, .modal-swatch.more-style-12::before { z-index: 1; top: 0; right: 18%; width: 1px; height: 100%; background: #21403b; opacity: .22; }
+.more-card.more-style-12 .preview-mark { color: #ee654f; font-size: 34px; font-weight: 500; }
+.preview-line { z-index: 2; height: 1px; background: rgba(33,64,59,.5); transform: rotate(-18deg); }.line-one { top: 31%; right: 10%; width: 34%; }.line-two { top: 45%; right: 20%; width: 21%; background: #ee654f; }
+
+/* 28 — Future Court */
+.more-card.more-style-13 .concept-preview, .modal-swatch.more-style-13 { --more-accent: #ff692e; color: #e9f4ff; background: #183b8c; }
+.more-card.more-style-13 .concept-preview::before, .modal-swatch.more-style-13::before { z-index: 1; inset: 0; background: linear-gradient(135deg, transparent 0 48%, rgba(255,105,46,.65) 48.2% 49%, transparent 49.2%); }
+.more-card.more-style-13 .concept-preview::after, .modal-swatch.more-style-13::after { background-image: linear-gradient(rgba(91,219,255,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(91,219,255,.18) 1px, transparent 1px); background-size: 23px 23px; opacity: .9; mix-blend-mode: normal; }
+.preview-grid { z-index: 2; top: 14%; right: 13%; width: 44%; height: 47%; border: 1px solid rgba(91,219,255,.65); transform: perspective(200px) rotateX(54deg) rotateZ(-14deg); }.preview-orb { z-index: 4; top: 31%; right: 28%; width: 48px; height: 48px; border: 2px solid #ff692e; border-radius: 50%; box-shadow: 0 0 22px #ff692e; }
+
+/* 29 — Ultraviolet Call-In */
+.more-card.more-style-14 .concept-preview, .modal-swatch.more-style-14 { --more-accent: #f6ff39; color: #faf7ff; background: radial-gradient(circle at 72% 27%, #6e42d8 0, #2b155c 31%, #130d2d 70%); }
+.more-card.more-style-14 .concept-preview::before, .modal-swatch.more-style-14::before { z-index: 1; right: -12%; bottom: -17%; width: 73%; aspect-ratio: 1; border: 1px solid rgba(246,255,57,.5); border-radius: 50%; box-shadow: 0 0 0 16px rgba(246,255,57,.05), 0 0 55px rgba(110,66,216,.7); }
+.more-card.more-style-14 .preview-mark { color: #f6ff39; }.preview-moon { z-index: 3; top: 22%; right: 23%; width: 58px; height: 58px; border-radius: 50%; background: #f6ff39; box-shadow: 0 0 34px rgba(246,255,57,.45); }.preview-starfield { z-index: 4; top: 42%; right: 20px; color: #cbb8ff; letter-spacing: .6em; }
+
+/* 30 — County Fair Scorecard */
+.more-card.more-style-15 .concept-preview, .modal-swatch.more-style-15 { --more-accent: #ef4c3c; color: #fff6ce; background: #2ea8a1; }
+.more-card.more-style-15 .concept-preview::before, .modal-swatch.more-style-15::before { z-index: 1; bottom: -12%; left: -8%; width: 114%; height: 54%; background: #efc94c; clip-path: polygon(0 20%,7% 27%,14% 20%,21% 28%,28% 20%,35% 28%,42% 20%,49% 28%,56% 20%,63% 28%,70% 20%,77% 28%,84% 20%,91% 28%,98% 20%,100% 100%,0 100%); }
+.more-card.more-style-15 .preview-mark { color: #efc94c; }.preview-flag { z-index: 4; top: 21%; width: 41px; height: 49px; clip-path: polygon(0 0,100% 0,76% 100%,0 80%); }.flag-one { left: 19%; background: #ef4c3c; transform: rotate(-7deg); }.flag-two { left: 30%; background: #f7f2d7; transform: rotate(5deg); }.flag-three { left: 41%; background: #efc94c; transform: rotate(14deg); }
+
+/* 31 — Sunburst Standard */
+.more-card.more-style-16 .concept-preview, .modal-swatch.more-style-16 { --more-accent: #111; color: #111; background: #f2c94c; }
+.more-card.more-style-16 .concept-preview::before, .modal-swatch.more-style-16::before { z-index: 1; top: -40%; right: -15%; width: 91%; aspect-ratio: 1; border-radius: 50%; background: repeating-conic-gradient(#111 0 4deg, transparent 4deg 12deg); opacity: .72; }
+.more-card.more-style-16 .preview-mark { color: #f2c94c; text-shadow: 2px 2px #111; }.preview-rays { z-index: 2; top: 23%; right: 26%; width: 106px; height: 106px; border: 17px dotted #111; border-radius: 50%; opacity: .7; }.preview-disc { z-index: 2; top: 34%; right: 32%; width: 45px; height: 45px; border-radius: 50%; background: #111; }
+
+/* 32 — Lavender Press */
+.more-card.more-style-17 .concept-preview, .modal-swatch.more-style-17 { --more-accent: #8354bd; color: #35234e; background: #e9ddfb; }
+.more-card.more-style-17 .concept-preview::before, .modal-swatch.more-style-17::before { z-index: 1; right: 8%; bottom: -20%; width: 68%; aspect-ratio: 1; border-radius: 50%; background: #d19ce6; opacity: .52; }
+.more-card.more-style-17 .preview-mark { color: #8354bd; font-weight: 500; }.preview-bloom { z-index: 2; border-radius: 50% 50% 50% 0; background: #8354bd; opacity: .65; transform: rotate(45deg); }.bloom-one { top: 18%; left: 20%; width: 38px; height: 38px; }.bloom-two { top: 25%; left: 28%; width: 20px; height: 20px; background: #ef7a9e; }
+
+/* 33 — Pixel Box Score */
+.more-card.more-style-18 .concept-preview, .modal-swatch.more-style-18 { --more-accent: #ff4aa2; color: #5ff7cf; background: #17202f; }
+.more-card.more-style-18 .concept-preview::before, .modal-swatch.more-style-18::before { z-index: 1; inset: 0; background: linear-gradient(90deg, transparent 0 49%, rgba(95,247,207,.15) 49% 51%, transparent 51%), linear-gradient(0deg, transparent 0 49%, rgba(95,247,207,.15) 49% 51%, transparent 51%); background-size: 26px 26px; }.more-card.more-style-18 .concept-preview::after, .modal-swatch.more-style-18::after { background-image: none; background-color: rgba(23,32,47,.15); opacity: 1; mix-blend-mode: normal; }
+.more-card.more-style-18 .preview-mark { color: #ff4aa2; }.preview-pixel { z-index: 2; width: 18px; height: 18px; background: #ff4aa2; box-shadow: 22px 0 #ff4aa2,44px 0 #ff4aa2,0 22px #5ff7cf,22px 22px #5ff7cf,44px 22px #5ff7cf; }.pixel-one { top: 24%; left: 23%; }.pixel-two { top: 28%; left: 54%; background: #f8ee56; box-shadow: 22px 0 #f8ee56,44px 0 #f8ee56,0 22px #ff4aa2,22px 22px #ff4aa2,44px 22px #ff4aa2; }.pixel-three { top: 45%; left: 41%; background: #5ff7cf; box-shadow: 22px 0 #5ff7cf,44px 0 #5ff7cf,0 22px #f8ee56,22px 22px #f8ee56,44px 22px #f8ee56; }
+
+/* 34 — Woodcut Rink */
+.more-card.more-style-19 .concept-preview, .modal-swatch.more-style-19 { --more-accent: #d3ac50; color: #253a2d; background: #d9d0ad; }
+.more-card.more-style-19 .concept-preview::before, .modal-swatch.more-style-19::before { z-index: 1; top: -9%; right: -8%; width: 79%; height: 120%; background: repeating-linear-gradient(83deg, transparent 0 7px, rgba(37,58,45,.23) 8px 10px); transform: rotate(7deg); }.more-card.more-style-19 .preview-mark { color: #af3c2f; }
+.preview-woodcut { z-index: 2; border: 3px solid #253a2d; border-radius: 50% 50% 4px 4px; opacity: .63; }.woodcut-one { top: 21%; right: 22%; width: 123px; height: 77px; transform: rotate(-10deg); }.woodcut-two { top: 26%; right: 16%; width: 123px; height: 77px; transform: rotate(8deg); border-color: #af3c2f; }
+
+/* 35 — Bubblegum Broadcast */
+.more-card.more-style-20 .concept-preview, .modal-swatch.more-style-20 { --more-accent: #1c4fe4; color: #fff7d5; background: #ff6b9f; }
+.more-card.more-style-20 .concept-preview::before, .modal-swatch.more-style-20::before { z-index: 1; right: -16%; bottom: -26%; width: 89%; aspect-ratio: 1; border-radius: 50%; background: #ffb53d; box-shadow: 0 0 0 22px rgba(255,181,61,.28), 0 0 0 44px rgba(255,181,61,.16); }.more-card.more-style-20 .preview-mark { padding: 6px 9px; border-radius: 14px; background: #fff7d5; color: #1c4fe4; transform: rotate(7deg); }
+.preview-bubble { z-index: 2; border: 2px solid #fff7d5; border-radius: 50%; background: #1c4fe4; }.bubble-one { top: 19%; left: 20%; width: 53px; height: 53px; }.bubble-two { top: 34%; left: 37%; width: 29px; height: 29px; background: #ffb53d; }.bubble-three { top: 19%; left: 45%; width: 19px; height: 19px; background: #fff7d5; }
+
+@media (max-width: 700px) {
+  .more-card .preview-copy h2 { font-size: clamp(3rem, 12vw, 4.5rem); }
+}
