@@ -490,12 +490,15 @@ h2 span { color: var(--silver); }
   .sports-page .art-frame { box-shadow: 16px 16px 0 rgba(239,30,50,.72), 0 22px 40px rgba(0,0,0,.48); }
 }
 
-.sports-page .site-nav .facebook-link {
+.sports-page .site-nav .facebook-link,
+.sports-page .site-nav .youtube-link {
   color: var(--red);
 }
 
 .sports-page .site-nav .facebook-link:hover,
-.sports-page .site-nav .facebook-link:focus-visible {
+.sports-page .site-nav .facebook-link:focus-visible,
+.sports-page .site-nav .youtube-link:hover,
+.sports-page .site-nav .youtube-link:focus-visible {
   color: var(--paper);
 }
 
@@ -522,6 +525,17 @@ h2 span { color: var(--silver); }
   background: #1e1e1e;
 }
 
+.sports-page .button-youtube-light {
+  margin-left: 8px;
+  color: var(--paper);
+  background: var(--red-dark);
+}
+
+.sports-page .button-youtube-light:hover,
+.sports-page .button-youtube-light:focus-visible {
+  background: var(--red);
+}
+
 .sports-page .footer-social {
   display: inline-flex;
   align-items: center;
@@ -541,6 +555,10 @@ h2 span { color: var(--silver); }
 
 @media (max-width: 560px) {
   .sports-page .button-facebook-light {
+    margin: 8px 0 0;
+  }
+
+  .sports-page .button-youtube-light {
     margin: 8px 0 0;
   }
 }
