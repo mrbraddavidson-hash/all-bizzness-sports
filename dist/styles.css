@@ -98,7 +98,7 @@ h1 em, h2 em { color: var(--red); font-style: normal; }
 .art-orbit-two { inset: 9%; border-top-color: var(--red); border-bottom-color: transparent; transform: rotate(32deg); }
 .art-frame { position: relative; z-index: 1; width: 79%; aspect-ratio: 1; overflow: hidden; border: 1px solid rgba(244,241,234,.33); background: #000; box-shadow: 22px 22px 0 rgba(125,23,33,.35), 0 24px 50px rgba(0,0,0,.4); transform: rotate(3deg); }
 .art-frame::after { content: ""; position: absolute; inset: 0; border: 1px solid rgba(225,29,46,.55); transform: scale(.96); pointer-events: none; }
-.art-frame img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.art-frame img, .art-frame video { width: 100%; height: 100%; display: block; object-fit: cover; }
 .sticker { position: absolute; z-index: 2; padding: 9px 12px; color: var(--ink); background: var(--paper); font-size: 11px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; box-shadow: 8px 8px 0 rgba(225,29,46,.75); }
 .sticker-top { top: 9%; right: 0; transform: rotate(7deg); }
 .sticker-bottom { left: 4%; bottom: 14%; color: var(--paper); background: var(--red); box-shadow: 7px 7px 0 rgba(244,241,234,.22); transform: rotate(-8deg); }
@@ -844,7 +844,7 @@ h2 span { color: var(--silver); }
   }
 }
 
-/* The logo leads the homepage directly beneath the local-to-big-league cue. */
+/* The hero media leads the homepage directly beneath the local-to-big-league cue. */
 .sports-page .hero {
   display: block;
   min-height: auto;
@@ -861,8 +861,21 @@ h2 span { color: var(--silver); }
 }
 
 .sports-page .hero-copy .hero-art {
-  width: min(100%, 530px);
+  width: min(100%, 760px);
+  aspect-ratio: 16 / 9;
   margin: 0 auto 58px;
+}
+
+.sports-page .hero-copy .art-frame {
+  width: 86%;
+  aspect-ratio: 16 / 9;
+}
+
+.sports-page .hero-copy .art-frame video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .sports-page .hero-copy h1 {
