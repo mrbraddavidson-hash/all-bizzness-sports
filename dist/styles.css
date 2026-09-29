@@ -82,13 +82,8 @@ h1, h2 { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 h1 { max-width: 760px; font-size: clamp(4.5rem, 9vw, 8.5rem); letter-spacing: -.06em; line-height: .82; }
 h1 em, h2 em { color: var(--red); font-style: normal; }
 .hero-lede { max-width: 520px; margin: 34px 0 28px; color: #c5c3bf; font-size: 18px; line-height: 1.65; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; min-height: 50px; padding: 0 19px; border: 1px solid transparent; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; transition: transform .2s ease, background .2s ease, border-color .2s ease; }
 .button:hover, .button:focus-visible { transform: translateY(-3px); }
-.button-primary { color: var(--paper); background: var(--red); }
-.button-primary:hover, .button-primary:focus-visible { background: #f03242; }
-.button-quiet { color: var(--paper); border-color: var(--line); }
-.button-quiet:hover, .button-quiet:focus-visible { border-color: var(--paper); }
 .hero-note { display: flex; align-items: center; gap: 10px; max-width: 420px; margin-top: 40px; color: var(--muted); font-size: 12px; letter-spacing: .03em; }
 .pulse-dot { width: 7px; height: 7px; flex: 0 0 auto; border-radius: 999px; background: var(--red); box-shadow: 0 0 0 6px rgba(225,29,46,.12); }
 
@@ -211,7 +206,6 @@ h2 span { color: var(--silver); }
   h1 { font-size: clamp(3.8rem, 17vw, 6rem); }
   h2 { font-size: clamp(3.7rem, 16vw, 5.5rem); }
   .hero-lede { font-size: 16px; }
-  .hero-actions { align-items: stretch; flex-direction: column; }
   .button { width: 100%; }
   .hero-note { margin-top: 30px; }
   .hero-art { width: min(100%, 430px); }
@@ -314,23 +308,6 @@ h2 span { color: var(--silver); }
   color: var(--paper);
   font-size: 19px;
   line-height: 1.55;
-}
-.sports-page .button-primary {
-  box-shadow: 8px 8px 0 var(--red-dark);
-}
-.sports-page .button-primary:hover,
-.sports-page .button-primary:focus-visible {
-  background: #ff3348;
-  box-shadow: 4px 4px 0 var(--red-dark);
-}
-.sports-page .button-quiet {
-  border-color: rgba(244,241,234,.38);
-}
-.sports-page .button-quiet:hover,
-.sports-page .button-quiet:focus-visible {
-  color: var(--ink);
-  background: var(--paper);
-  border-color: var(--paper);
 }
 .sports-page .hero-note {
   color: #c6a5a7;
@@ -500,18 +477,6 @@ h2 span { color: var(--silver); }
 .sports-page .site-nav .youtube-link:hover,
 .sports-page .site-nav .youtube-link:focus-visible {
   color: var(--paper);
-}
-
-.sports-page .button-social {
-  color: var(--paper);
-  background: transparent;
-  border-color: var(--red);
-  box-shadow: 5px 5px 0 rgba(225, 29, 46, .35);
-}
-
-.sports-page .button-social:hover,
-.sports-page .button-social:focus-visible {
-  background: var(--red);
 }
 
 .sports-page .button-facebook-light {
