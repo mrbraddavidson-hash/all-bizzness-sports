@@ -176,9 +176,6 @@ h2 span { color: var(--silver); }
 .cta-content p:not(.eyebrow) { max-width: 360px; margin: 28px 0; color: rgba(244,241,234,.82); font-size: 18px; }
 .button-light { color: var(--ink); background: var(--paper); }
 .button-light:hover, .button-light:focus-visible { background: #fff; }
-.cta-badge { width: 240px; height: 240px; display: grid; place-content: center; gap: 10px; border: 1px solid rgba(244,241,234,.7); border-radius: 50%; color: var(--paper); text-align: center; transform: rotate(12deg); }
-.cta-badge span { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 96px; line-height: .75; letter-spacing: -.1em; }
-.cta-badge small { font-size: 10px; font-weight: 800; letter-spacing: .16em; line-height: 1.45; }
 .site-footer { padding: 42px 0 50px; background: var(--ink); }
 .footer-grid { display: flex; justify-content: space-between; gap: 40px; align-items: end; }
 .footer-tagline { margin: 22px 0 0; color: var(--muted); font-size: 13px; }
@@ -236,8 +233,6 @@ h2 span { color: var(--silver); }
   .host-card { min-height: 280px; }
   .cta-grid { min-height: 580px; align-items: flex-start; flex-direction: column; justify-content: center; }
   .cta-content p:not(.eyebrow) { font-size: 16px; }
-  .cta-badge { position: absolute; right: -54px; bottom: 25px; width: 180px; height: 180px; }
-  .cta-badge span { font-size: 72px; }
   .footer-grid { align-items: start; flex-direction: column; }
   .footer-note { flex-direction: column; gap: 8px; text-align: left; }
 }
