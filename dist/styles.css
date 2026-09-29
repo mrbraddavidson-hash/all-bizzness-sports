@@ -207,6 +207,8 @@ h2 span { color: var(--silver); }
   h2 { font-size: clamp(3.7rem, 16vw, 5.5rem); }
   .hero-lede { font-size: 16px; }
   .button { width: 100%; }
+  .cta-content { width: 100%; }
+  .cta-content .button { max-width: 100%; margin-left: 0; margin-right: 0; }
   .hero-note { margin-top: 30px; }
   .hero-art { width: min(100%, 430px); }
   .sticker { font-size: 9px; }
