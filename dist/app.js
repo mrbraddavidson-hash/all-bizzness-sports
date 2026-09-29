@@ -1,21 +1,21 @@
 const topicContent = {
   diamond: {
     number: "01",
-    kicker: "The diamond",
-    title: "Every inning has a story.",
-    copy: "From first pitch to late-inning drama, the diamond is where patience turns into pressure."
+    kicker: "Baseball",
+    title: "The local diamond deserves a spotlight.",
+    copy: "From first pitch to late-inning drama, local baseball gives the community another reason to show up."
   },
   rink: {
     number: "02",
-    kicker: "The rink",
-    title: "Fast game. Faster opinions.",
-    copy: "The rink is all pace, momentum, and moments that can flip a whole conversation in seconds."
+    kicker: "Hockey",
+    title: "Every rink has a story.",
+    copy: "From Tweed to Trenton and Frankford, local hockey runs on pace, pride, and people who keep showing up."
   },
   locker: {
     number: "03",
-    kicker: "The locker room",
-    title: "The score is never the whole story.",
-    copy: "The best sports conversations live in the details, the rivalries, and the stories behind the score."
+    kicker: "Community",
+    title: "The score is only part of the story.",
+    copy: "The best sports conversations live in the details, the rivalries, and the people behind the score."
   }
 };
 
