@@ -879,6 +879,10 @@ h2 span { color: var(--silver); }
   margin: 0 auto 58px;
 }
 
+.sports-page .hero-copy .marquee {
+  margin: 30px 0 24px;
+}
+
 .sports-page .hero-copy .art-frame {
   width: 86%;
   aspect-ratio: 16 / 9;
