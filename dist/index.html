@@ -70,12 +70,17 @@
             All Bizzness Sports brings local sports, community stories, and bigger debates together — from rink nights
             in Tweed and Quinte to the teams everyone is talking about.
           </p>
-          <div class="marquee" aria-label="All Bizzness Sports topics">
-            <div class="marquee-track">
-              <span>Local rink talk</span><b>✦</b><span>Baseball talk</span><b>✦</b><span>Hockey talk</span><b>✦</b><span>Community stories</span><b>✦</b><span>Game-day stories</span><b>✦</b>
-              <span>Local rink talk</span><b>✦</b><span>Baseball talk</span><b>✦</b><span>Hockey talk</span><b>✦</b><span>Community stories</span><b>✦</b><span>Game-day stories</span><b>✦</b>
+          <section class="live-ticker" aria-label="Live and scheduled games">
+            <div class="live-ticker-head">
+              <span class="live-ticker-label"><span class="pulse-dot"></span> Live scoreboard</span>
+              <span class="live-ticker-updated" id="tickerUpdated">Updating scores…</span>
             </div>
-          </div>
+            <div class="ticker-window">
+              <div class="ticker-track" id="tickerTrack" aria-live="polite">
+                <div class="ticker-card ticker-card-empty">Loading live scores…</div>
+              </div>
+            </div>
+          </section>
           <div class="hero-note"><span class="pulse-dot"></span> Live from the studio in the holler · Tweed · Hastings · Quinte / Local sports talk</div>
         </div>
       </section>

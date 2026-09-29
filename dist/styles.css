@@ -99,11 +99,26 @@ h1 em, h2 em { color: var(--red); font-style: normal; }
 .sticker-bottom { left: 4%; bottom: 14%; color: var(--paper); background: var(--red); box-shadow: 7px 7px 0 rgba(244,241,234,.22); transform: rotate(-8deg); }
 .hero-serial { position: absolute; right: 4%; bottom: 4%; color: var(--muted); font-size: 10px; letter-spacing: .22em; transform: rotate(90deg); transform-origin: right center; }
 
-.marquee { overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--paper); background: var(--red); }
-.marquee-track { display: flex; align-items: center; width: max-content; min-height: 54px; animation: drift 32s linear infinite; }
-.marquee span { padding: 0 26px; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 22px; letter-spacing: .06em; text-transform: uppercase; }
-.marquee b { font-size: 13px; }
-@keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.live-ticker { overflow: hidden; border: 1px solid var(--line); color: var(--paper); background: var(--red); }
+.live-ticker-head { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 9px 16px; border-bottom: 1px solid rgba(244,241,234,.28); font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.live-ticker-label { display: inline-flex; align-items: center; gap: 9px; }
+.live-ticker-label .pulse-dot { width: 6px; height: 6px; background: var(--paper); box-shadow: 0 0 0 5px rgba(244,241,234,.14); }
+.live-ticker-updated { color: rgba(244,241,234,.7); font-size: 9px; letter-spacing: .08em; white-space: nowrap; }
+.ticker-window { overflow: hidden; }
+.ticker-track { display: flex; align-items: stretch; width: max-content; animation: ticker-drift 42s linear infinite; }
+.ticker-track.is-static { width: 100%; animation: none; }
+.ticker-card { min-height: 64px; display: flex; align-items: center; gap: 11px; padding: 10px 18px; border-right: 1px solid rgba(244,241,234,.22); font-size: 11px; white-space: nowrap; }
+.ticker-card-empty { width: 100%; justify-content: center; color: rgba(244,241,234,.82); font-size: 12px; white-space: normal; text-align: center; }
+.ticker-badge { align-self: flex-start; padding: 3px 5px; color: var(--ink); background: var(--paper); font-size: 9px; font-weight: 900; letter-spacing: .08em; }
+.team-item { display: inline-flex; align-items: center; gap: 7px; font-weight: 900; letter-spacing: .05em; }
+.team-logo { width: 23px; height: 23px; object-fit: contain; }
+.score-divider { color: rgba(244,241,234,.68); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.score { min-width: 2ch; margin-left: 2px; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 20px; line-height: 1; }
+.status { color: rgba(244,241,234,.78); font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.status-live { color: #fff; }
+.status-pre { color: rgba(244,241,234,.7); }
+.status-final { color: rgba(244,241,234,.58); }
+@keyframes ticker-drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 .section { padding-top: 138px; padding-bottom: 138px; }
 .intro-grid { display: grid; grid-template-columns: .95fr 1fr; gap: 84px; align-items: end; }
@@ -212,7 +227,8 @@ h2 span { color: var(--silver); }
   .hero-note { margin-top: 30px; }
   .hero-art { width: min(100%, 430px); }
   .sticker { font-size: 9px; }
-  .marquee span { padding: 0 17px; font-size: 18px; }
+  .live-ticker-head { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .ticker-card { padding: 9px 14px; }
   .section { padding-top: 88px; padding-bottom: 88px; }
   .intro-copy .large-copy { font-size: 21px; }
   .signal-grid { grid-template-columns: 1fr; margin-top: 46px; }
@@ -385,13 +401,13 @@ h2 span { color: var(--silver); }
 .sports-page .hero-serial {
   color: #c6a5a7;
 }
-.sports-page .marquee {
+.sports-page .live-ticker {
   position: relative;
   border-color: rgba(244,241,234,.3);
   background: var(--red);
   box-shadow: 0 11px 0 rgba(141,20,33,.35);
 }
-.sports-page .marquee::after {
+.sports-page .live-ticker::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -846,7 +862,7 @@ h2 span { color: var(--silver); }
   margin: 0 auto 58px;
 }
 
-.sports-page .hero-copy .marquee {
+.sports-page .hero-copy .live-ticker {
   margin: 30px 0 24px;
 }
 
