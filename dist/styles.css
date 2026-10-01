@@ -1210,6 +1210,7 @@ h2 span { color: var(--silver); }
 }
 
 /* Keep supporting copy readable across the whole page. */
+.sports-page .intro-grid { align-items: start; }
 .sports-page .hero-lede { font-size: 20px; line-height: 1.55; }
 .sports-page .intro-copy > p:not(.large-copy) { font-size: 24px; line-height: 1.35; }
 .sports-page .hosts-intro p:last-child { max-width: 320px; font-size: 20px; line-height: 1.45; }
