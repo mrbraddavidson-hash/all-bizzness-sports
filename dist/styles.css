@@ -1343,3 +1343,17 @@ h2 span { color: var(--silver); }
     min-width: min(300px, calc(100vw - 32px));
   }
 }
+
+@media (max-width: 900px) {
+  .sports-page .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(9, 9, 9, .95);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .28);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+  .sports-page main section[id] { scroll-margin-top: 90px; }
+}
