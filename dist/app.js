@@ -6,6 +6,18 @@ const ENDPOINTS = [
   { league: "CFL", url: "https://site.api.espn.com/apis/site/v2/sports/football/cfl/scoreboard" }
 ];
 
+const MAX_SCORE_AGE_MS = 36 * 60 * 60 * 1000;
+const MAX_SCORE_LEAD_MS = 10 * 24 * 60 * 60 * 1000;
+
+function isUsableEvent(event, now = Date.now()) {
+  const eventTime = Date.parse(event?.date || "");
+  if (!Number.isFinite(eventTime)) return false;
+
+  const state = event.competitions?.[0]?.status?.type?.state || "pre";
+  if (state === "post") return eventTime >= now - MAX_SCORE_AGE_MS;
+  return eventTime >= now - MAX_SCORE_AGE_MS && eventTime <= now + MAX_SCORE_LEAD_MS;
+}
+
 const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (character) => ({
   "&": "&amp;",
   "<": "&lt;",
@@ -20,7 +32,7 @@ async function fetchLeague(endpoint) {
     if (!res.ok) return [];
     const data = await res.json();
 
-    return (data.events || []).map((event) => {
+    return (data.events || []).filter((event) => isUsableEvent(event)).map((event) => {
       const comp = event.competitions?.[0];
       if (!comp) return null;
 
@@ -83,7 +95,10 @@ function renderCard(game) {
 async function refreshTicker() {
   const track = document.getElementById("tickerTrack");
   const updated = document.getElementById("tickerUpdated");
+  const tickerStatus = document.getElementById("tickerStatus");
   if (!track) return;
+
+  if (document.hidden) return;
 
   const results = await Promise.all(ENDPOINTS.map(fetchLeague));
   const games = results.flat();
@@ -91,12 +106,14 @@ async function refreshTicker() {
   if (!games.length) {
     track.classList.add("is-static");
     track.innerHTML = '<div class="ticker-card ticker-card-empty">No live or scheduled games across selected leagues today.</div>';
+    if (tickerStatus) tickerStatus.textContent = "No current live or scheduled games are available.";
   } else {
     const order = { in: 0, pre: 1, post: 2 };
     games.sort((a, b) => (order[a.state] ?? 3) - (order[b.state] ?? 3));
     const cardsHtml = games.map(renderCard).join("");
     track.classList.remove("is-static");
-    track.innerHTML = cardsHtml + cardsHtml;
+    track.innerHTML = `<div class="ticker-sequence">${cardsHtml}</div><div class="ticker-sequence" aria-hidden="true">${cardsHtml}</div>`;
+    if (tickerStatus) tickerStatus.textContent = `${games.length} current scoreboard games updated.`;
   }
 
   if (updated) {
@@ -114,6 +131,9 @@ const scheduleTickerRefresh = () => {
 
 scheduleTickerRefresh();
 setInterval(refreshTicker, 60000);
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) refreshTicker();
+});
 
 const nav = document.querySelector(".site-nav");
 const menuToggle = document.querySelector(".menu-toggle");
@@ -146,14 +166,6 @@ document.addEventListener("keydown", (event) => {
 });
 
 const revealItems = document.querySelectorAll(".reveal");
-const revealItemsAboveViewport = () => {
-  const viewportBottom = window.scrollY + window.innerHeight;
-
-  revealItems.forEach((item) => {
-    const itemTop = item.getBoundingClientRect().top + window.scrollY;
-    if (itemTop < viewportBottom) item.classList.add("is-visible");
-  });
-};
 
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -163,11 +175,9 @@ if ("IntersectionObserver" in window) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.12, rootMargin: "0px 0px 20% 0px" });
 
   revealItems.forEach((item) => revealObserver.observe(item));
-  requestAnimationFrame(revealItemsAboveViewport);
-  window.addEventListener("hashchange", () => requestAnimationFrame(revealItemsAboveViewport));
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
