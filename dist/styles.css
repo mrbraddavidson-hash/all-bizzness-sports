@@ -332,7 +332,7 @@ h2 span { color: var(--silver); }
   align-items: center;
   gap: 6px;
   min-height: 44px;
-  padding: 8px 0;
+  padding: 4px 0;
   color: var(--brand-muted);
   font-size: 10px;
   font-weight: 600;
@@ -348,7 +348,12 @@ h2 span { color: var(--silver); }
   color: var(--brand-muted);
   font-size: 11px;
   letter-spacing: .12em;
+  line-height: 1.2;
   text-transform: uppercase;
+}
+@media (min-width: 901px) {
+  .site-footer__meta { gap: 2px; }
+  .site-footer__credit { min-height: 32px; }
 }
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.is-visible { opacity: 1; transform: none; }
