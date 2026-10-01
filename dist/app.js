@@ -141,9 +141,7 @@ const menuToggle = document.querySelector(".menu-toggle");
 const setMenuState = (isOpen) => {
   nav?.classList.toggle("is-open", isOpen);
   menuToggle?.setAttribute("aria-expanded", String(isOpen));
-  menuToggle?.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
-  const screenReaderLabel = menuToggle?.querySelector(".sr-only");
-  if (screenReaderLabel) screenReaderLabel.textContent = isOpen ? "Close navigation menu" : "Open navigation menu";
+  menuToggle?.setAttribute("aria-label", isOpen ? "Menu — close navigation menu" : "Menu — open navigation menu");
 };
 
 menuToggle?.addEventListener("click", () => {

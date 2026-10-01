@@ -63,6 +63,7 @@ button { font: inherit; }
 }
 .wordmark { display: inline-flex; align-items: center; gap: 10px; text-transform: uppercase; letter-spacing: .09em; font-weight: 900; font-size: 14px; line-height: 1; }
 .wordmark-logo { width: 76px; flex: 0 0 auto; gap: 0; letter-spacing: 0; }
+.wordmark-logo picture { display: block; width: 100%; }
 .wordmark-logo img { display: block; width: 100%; height: auto; max-width: 100%; object-fit: contain; }
 .wordmark-mark { display: grid; place-items: center; width: 30px; height: 30px; border: 2px solid var(--red); color: var(--red); font-size: 10px; letter-spacing: -.06em; transform: skew(-9deg); }
 .wordmark-type { display: flex; flex-direction: column; gap: 5px; }
