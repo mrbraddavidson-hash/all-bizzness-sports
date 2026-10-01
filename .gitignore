@@ -1,0 +1,5 @@
+.codex-remote-attachments/
+outputs/
+work/
+.wrangler/
+node_modules/

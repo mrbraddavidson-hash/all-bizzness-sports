@@ -110,19 +110,43 @@ setInterval(refreshTicker, 60000);
 const nav = document.querySelector(".site-nav");
 const menuToggle = document.querySelector(".menu-toggle");
 
+const setMenuState = (isOpen) => {
+  nav?.classList.toggle("is-open", isOpen);
+  menuToggle?.setAttribute("aria-expanded", String(isOpen));
+  menuToggle?.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+  const screenReaderLabel = menuToggle?.querySelector(".sr-only");
+  if (screenReaderLabel) screenReaderLabel.textContent = isOpen ? "Close navigation menu" : "Open navigation menu";
+};
+
 menuToggle?.addEventListener("click", () => {
-  const isOpen = nav.classList.toggle("is-open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  setMenuState(!nav?.classList.contains("is-open"));
 });
 
 document.querySelectorAll(".site-nav a").forEach((link) => {
   link.addEventListener("click", () => {
-    nav?.classList.remove("is-open");
-    menuToggle?.setAttribute("aria-expanded", "false");
+    setMenuState(false);
   });
 });
 
+document.addEventListener("click", (event) => {
+  if (!nav?.classList.contains("is-open")) return;
+  if (!nav.contains(event.target) && !menuToggle?.contains(event.target)) setMenuState(false);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") setMenuState(false);
+});
+
 const revealItems = document.querySelectorAll(".reveal");
+const revealItemsAboveViewport = () => {
+  const viewportBottom = window.scrollY + window.innerHeight;
+
+  revealItems.forEach((item) => {
+    const itemTop = item.getBoundingClientRect().top + window.scrollY;
+    if (itemTop < viewportBottom) item.classList.add("is-visible");
+  });
+};
+
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
@@ -134,6 +158,8 @@ if ("IntersectionObserver" in window) {
   }, { threshold: 0.12 });
 
   revealItems.forEach((item) => revealObserver.observe(item));
+  requestAnimationFrame(revealItemsAboveViewport);
+  window.addEventListener("hashchange", () => requestAnimationFrame(revealItemsAboveViewport));
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
