@@ -202,7 +202,8 @@ h2 span { color: var(--silver); }
 .footer-tagline { margin: 22px 0 0; color: var(--muted); font-size: 13px; }
 .footer-note { display: flex; gap: 28px; color: var(--muted); font-size: 11px; letter-spacing: .08em; text-align: right; text-transform: uppercase; }
 .footer-copyright { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-.footer-credit { display: inline-flex; align-items: center; gap: 8px; color: var(--paper); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.footer-credit { display: inline-flex; align-items: center; gap: 6px; color: rgba(244,241,234,.56); font-size: 10px; font-weight: 600; letter-spacing: .04em; text-transform: none; transition: color .2s ease; }
+.footer-credit span { font-size: 12px; opacity: .7; }
 .footer-credit:hover, .footer-credit:focus-visible { color: var(--red); }
 
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
