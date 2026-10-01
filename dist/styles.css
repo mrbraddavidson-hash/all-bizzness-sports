@@ -1114,7 +1114,7 @@ h2 span { color: var(--silver); }
 .sports-page .header-score strong {
   justify-self: center;
   color: var(--paper);
-  background: var(--red);
+  background: #b40f22;
 }
 
 @keyframes header-scoreboard-drop {

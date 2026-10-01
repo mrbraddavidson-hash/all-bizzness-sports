@@ -104,7 +104,15 @@ async function refreshTicker() {
   }
 }
 
-refreshTicker();
+const scheduleTickerRefresh = () => {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(() => refreshTicker(), { timeout: 1200 });
+  } else {
+    window.setTimeout(refreshTicker, 350);
+  }
+};
+
+scheduleTickerRefresh();
 setInterval(refreshTicker, 60000);
 
 const nav = document.querySelector(".site-nav");

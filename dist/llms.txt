@@ -1,0 +1,26 @@
+# All Bizzness Sports
+
+> Official site for All Bizzness Sports, a local-first sports podcast covering community sports, regional hockey, and big-league storylines from the Tweed, Hastings, and Quinte area.
+
+## About
+
+- All Bizzness Sports is a sports podcast hosted by Yog and The Bone.
+- The show connects local teams, community sports, and major-league conversation.
+- Local coverage referenced on the site includes Tweed, Hastings, Quinte, Frankford, Trenton, and Centre Hastings.
+
+## Local sports orbit
+
+- Frankford Huskies
+- Trenton Golden Hawks
+- Tweed Hawks
+- Tweed Oil Kings
+- Land O'Lakes Curling Club
+- Centre Hastings Grizzlies
+- Tweed & District Figure Skating
+- Fleming Phoenix
+
+## Official links
+
+- [All Bizzness Sports website](https://all-bizzness-sports.pages.dev/)
+- [Facebook](https://www.facebook.com/profile.php?id=61593014556797)
+- [YouTube](https://www.youtube.com/@AllBizznessSports)

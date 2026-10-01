@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /mockups/
+
+Sitemap: https://all-bizzness-sports.pages.dev/sitemap.xml
