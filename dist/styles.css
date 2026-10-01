@@ -216,7 +216,6 @@ h2 span { color: var(--silver); }
   .container { width: min(calc(100% - 40px), var(--max)); }
   .site-header { position: relative; }
   .menu-toggle { display: grid; gap: 5px; margin-left: auto; }
-  .menu-toggle > span:not(.sr-only) { display: block; width: 24px; height: 2px; background: var(--paper); }
   .site-nav { position: absolute; top: 78px; left: 0; right: 0; z-index: 10; display: none; flex-direction: column; gap: 0; padding: 12px 18px; background: var(--panel); border: 1px solid var(--line); }
   .site-nav.is-open { display: flex; }
   .site-nav a { padding: 14px 0; border-bottom: 1px solid var(--line); }
