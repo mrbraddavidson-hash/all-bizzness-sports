@@ -76,6 +76,7 @@
     />
     <link rel="stylesheet" href="styles.css?v=20261001-sticky-header" />
     <script src="app.min.js?v=20261001-audit-fix" defer></script>
+    <script src="cookie-settings.js?v=20261001-legal" defer></script>
   </head>
   <body class="sports-page">
     <div class="grain" aria-hidden="true"></div>
@@ -281,26 +282,56 @@
 
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="wordmark wordmark-logo footer-logo" href="/#top" aria-label="All Bizzness Sports home">
-            <picture>
-              <source type="image/avif" srcset="assets/all-bizzness-sports-logo-optimized.avif" />
-              <img src="assets/all-bizzness-sports-logo-optimized.webp" alt="All Bizzness Sports Podcast" width="800" height="800" loading="lazy" decoding="async" />
-            </picture>
-          </a>
-          <p class="footer-tagline">Live from the studio in the holler · Local sports talk from Tweed to the big leagues.</p>
-          <a class="footer-social" href="https://www.facebook.com/profile.php?id=61593014556797" target="_blank" rel="noopener noreferrer">Facebook <span>↗</span></a>
-          <a class="footer-social" href="https://www.youtube.com/@AllBizznessSports" target="_blank" rel="noopener noreferrer">YouTube <span>↗</span></a>
-        </div>
-        <div class="footer-note">
-          <div class="footer-copyright">
-            <a class="footer-credit" href="https://davidsondigitaldesign.com/" target="_blank" rel="noopener noreferrer">DavidsonDigitalDesign.com <span>↗</span></a>
-            <span>© <span id="year"></span> All Bizzness Sports</span>
-          </div>
-        </div>
+  <!-- BEGIN SITE FOOTER -->
+<footer class="site-footer" data-footer-theme="all-bizzness-sports" aria-labelledby="site-footer-title">
+  <div class="container site-footer__inner">
+    <div class="site-footer__topline">
+      <h2 class="site-footer__kicker" id="site-footer-title">All Bizzness Sports</h2>
+      <p class="site-footer__status"><span class="pulse-dot" aria-hidden="true"></span>Live from the studio in the holler</p>
+    </div>
+
+    <div class="site-footer__content">
+      <div class="site-footer__brand">
+        <a class="wordmark wordmark-logo site-footer__logo" href="/#top" aria-label="All Bizzness Sports home">
+          <picture>
+            <source type="image/avif" srcset="/assets/all-bizzness-sports-logo-optimized.avif" />
+            <img src="/assets/all-bizzness-sports-logo-optimized.webp" alt="All Bizzness Sports Podcast" width="800" height="800" loading="lazy" decoding="async" />
+          </picture>
+        </a>
+        <p class="site-footer__statement">Local talk.<br /><span>Big games.</span></p>
+        <p class="site-footer__summary">Community teams, rink nights, and the bigger debates — from Tweed to the big leagues.</p>
       </div>
-    </footer>
-  </body>
+
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <div class="site-footer__column">
+          <h3 class="site-footer__heading">Explore</h3>
+          <a class="site-footer__link" href="/#show">About the show <span aria-hidden="true">↗</span></a>
+          <a class="site-footer__link" href="/#local">Friends of the show <span aria-hidden="true">↗</span></a>
+          <a class="site-footer__link" href="/#hosts">Meet the hosts <span aria-hidden="true">↗</span></a>
+          <a class="site-footer__link" href="/#show">Listen to the show <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="site-footer__column">
+          <h3 class="site-footer__heading">Follow</h3>
+          <a class="site-footer__link" href="https://www.facebook.com/profile.php?id=61593014556797" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a>
+          <a class="site-footer__link" href="https://www.youtube.com/@AllBizznessSports" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="site-footer__meta">
+        <a class="site-footer__credit" href="https://davidsondigitaldesign.com/" target="_blank" rel="noopener noreferrer">DavidsonDigitalDesign.com <span aria-hidden="true">↗</span></a>
+        <span class="site-footer__copyright">© <span id="year">2026</span> All Bizzness Sports</span>
+        <nav class="site-footer__legal" aria-label="Legal and privacy">
+          <a class="site-footer__legal-link" href="/privacy/">Privacy</a>
+          <a class="site-footer__legal-link" href="/terms/">Terms</a>
+          <button class="site-footer__cookie-settings" type="button" data-cookie-settings>Cookie settings</button>
+        </nav>
+      </div>
+      <p class="site-footer__note">Tweed · Hastings · Quinte</p>
+    </div>
+  </div>
+</footer>
+<!-- END SITE FOOTER -->
+    </body>
 </html>
