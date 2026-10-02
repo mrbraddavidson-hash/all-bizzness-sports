@@ -187,7 +187,7 @@ h2 span { color: var(--silver); }
 .host-card-dark .host-card-top { color: rgba(244,241,234,.72); }
 .host-role { margin-bottom: 14px; color: rgba(9,9,9,.58); font-size: 11px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 .host-card-dark .host-role { color: rgba(244,241,234,.7); }
-.host-card-art { position: relative; z-index: 1; width: min(100%, 300px); height: 300px; flex: 0 0 300px; display: flex; align-items: flex-end; justify-content: center; margin: 12px auto 0; overflow: hidden; border-radius: 50%; background: rgba(9,9,9,.06); pointer-events: none; }
+.host-card-art { position: relative; z-index: 1; width: min(100%, 230px); height: 190px; flex: 0 0 190px; display: flex; align-items: flex-end; justify-content: center; margin: 20px auto 0; overflow: hidden; border-radius: 50%; background: rgba(9,9,9,.06); pointer-events: none; }
 .host-card-dark .host-card-art { background: rgba(244,241,234,.08); }
 .host-card-art img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
 .host-card-yog .host-card-art img { transform: translateY(5%); }
@@ -414,7 +414,7 @@ h2 span { color: var(--silver); }
   .topic-panel h3 { font-size: 3rem; }
   .host-cards { grid-template-columns: 1fr; }
   .host-card { min-height: 500px; }
-  .host-card-art { width: min(100%, 285px); height: 285px; flex-basis: 285px; }
+  .host-card-art { width: min(100%, 220px); height: 176px; flex-basis: 176px; }
   .host-card-copy { padding-top: 14px; }
   .cta-grid { min-height: 580px; align-items: flex-start; flex-direction: column; justify-content: center; }
   .cta-content p:not(.eyebrow) { font-size: 16px; }
