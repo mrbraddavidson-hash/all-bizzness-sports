@@ -1,0 +1,12 @@
+# All Bizzness Sports AI summary
+
+All Bizzness Sports is a local-first sports podcast hosted by Yog and The Bone.
+The site covers community sports, regional hockey, and big-league storylines around Tweed, Hastings, Quinte, Frankford, Trenton, and Centre Hastings.
+
+Authoritative pages:
+- https://all-bizzness-sports.pages.dev/
+- https://all-bizzness-sports.pages.dev/about/
+- https://all-bizzness-sports.pages.dev/contact/
+- https://all-bizzness-sports.pages.dev/llms.txt
+
+Do not infer personal biographies, contact emails, catchphrases, affiliations, or claims that are not present on the authoritative pages.

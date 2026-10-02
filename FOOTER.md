@@ -6,6 +6,8 @@ pages that use the shared footer:
 
 - `dist/index.html`
 - `dist/404.html`
+- `dist/about/index.html`
+- `dist/contact/index.html`
 - `dist/privacy/index.html`
 - `dist/terms/index.html`
 

@@ -65,6 +65,21 @@
               { "@type": "Place", "name": "Trenton" },
               { "@type": "Place", "name": "Centre Hastings" }
             ]
+          },
+          {
+            "@type": "VideoObject",
+            "@id": "https://all-bizzness-sports.pages.dev/#hero-video",
+            "name": "All Bizzness Sports local sports montage",
+            "description": "A short sports montage introducing All Bizzness Sports and its local-first coverage.",
+            "thumbnailUrl": "https://all-bizzness-sports.pages.dev/assets/hero-sports-poster.webp",
+            "contentUrl": "https://all-bizzness-sports.pages.dev/assets/hero-sports-optimized.mp4",
+            "duration": "PT10S",
+            "inLanguage": "en-CA",
+            "isFamilyFriendly": true,
+            "author": {
+              "@type": "Organization",
+              "name": "All Bizzness Sports"
+            }
           }
         ]
       }
@@ -128,9 +143,11 @@
                 muted
                 loop
                 playsinline
-                preload="none"
+                preload="metadata"
                 aria-label="All Bizzness Sports local sports video"
-              ></video>
+              >
+                <track kind="captions" src="assets/hero-sports-captions.vtt" srclang="en" label="English captions" />
+              </video>
             </div>
           </div>
           <h1 id="hero-title">Local talk.<br /><em>Big games.</em></h1>
@@ -221,13 +238,13 @@
           <div class="local-grid">
             <a class="local-card local-card-featured reveal" href="https://www.facebook.com/FrankfordHuskiesJrC" target="_blank" rel="noopener noreferrer">
               <span class="local-card-kicker">Junior C hockey · Frankford</span>
-              <span class="local-card-logo"><img src="assets/local-logos/frankford-huskies-optimized.webp" alt="Frankford Huskies logo" width="480" height="408" loading="lazy" decoding="async" /></span>
+              <span class="local-card-logo"><img src="assets/local-logos/frankford-huskies-optimized.webp" alt="Frankford Huskies logo" width="480" height="408" loading="eager" fetchpriority="high" decoding="async" /></span>
               <h3>Frankford<br />Huskies</h3>
               <span class="local-card-link">Follow the local ice <span>↗</span></span>
             </a>
             <a class="local-card local-card-red reveal reveal-delay" href="https://www.facebook.com/OJHLGoldenHawks" target="_blank" rel="noopener noreferrer">
               <span class="local-card-kicker">OJHL hockey · Trenton</span>
-              <span class="local-card-logo"><img src="assets/local-logos/trenton-golden-hawks-optimized.webp" alt="Trenton Golden Hawks logo" width="480" height="436" loading="lazy" decoding="async" /></span>
+              <span class="local-card-logo"><img src="assets/local-logos/trenton-golden-hawks-optimized.webp" alt="Trenton Golden Hawks logo" width="480" height="436" loading="eager" fetchpriority="high" decoding="async" /></span>
               <h3>Trenton<br />Golden Hawks</h3>
               <span class="local-card-link">Follow the local ice <span>↗</span></span>
             </a>
@@ -305,7 +322,7 @@
       <nav class="site-footer__nav" aria-label="Footer navigation">
         <div class="site-footer__column">
           <h3 class="site-footer__heading">Explore</h3>
-          <a class="site-footer__link" href="/#show">About the show <span aria-hidden="true">↗</span></a>
+          <a class="site-footer__link" href="/about/">About the show <span aria-hidden="true">↗</span></a>
           <a class="site-footer__link" href="/#local">Friends of the show <span aria-hidden="true">↗</span></a>
           <a class="site-footer__link" href="/#hosts">Meet the hosts <span aria-hidden="true">↗</span></a>
           <a class="site-footer__link" href="/#show">Listen to the show <span aria-hidden="true">↗</span></a>
@@ -314,6 +331,7 @@
           <h3 class="site-footer__heading">Follow</h3>
           <a class="site-footer__link" href="https://www.facebook.com/profile.php?id=61593014556797" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a>
           <a class="site-footer__link" href="https://www.youtube.com/@AllBizznessSports" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+          <a class="site-footer__link" href="/contact/">Contact the show <span aria-hidden="true">↗</span></a>
         </div>
       </nav>
     </div>

@@ -13,6 +13,8 @@ $partialPath = Join-Path $ProjectRoot 'shared/site-footer.html'
 $pagePaths = @(
   (Join-Path $ProjectRoot 'dist/index.html'),
   (Join-Path $ProjectRoot 'dist/404.html'),
+  (Join-Path $ProjectRoot 'dist/about/index.html'),
+  (Join-Path $ProjectRoot 'dist/contact/index.html'),
   (Join-Path $ProjectRoot 'dist/privacy/index.html'),
   (Join-Path $ProjectRoot 'dist/terms/index.html')
 )
