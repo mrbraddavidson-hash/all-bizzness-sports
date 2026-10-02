@@ -62,14 +62,10 @@ async function fetchLeague(endpoint) {
 }
 
 function renderTeam(team, showScore) {
-  const logo = team.logo
-    ? `<img class="team-logo" src="${escapeHtml(team.logo)}" alt="" loading="lazy" />`
-    : "";
   const score = showScore ? `<span class="score">${escapeHtml(team.score)}</span>` : "";
 
   return `
     <span class="team-item">
-      ${logo}
       <span>${escapeHtml(team.code)}</span>
       ${score}
     </span>
