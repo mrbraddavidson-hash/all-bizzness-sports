@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Host balance mockups · All Bizzness Sports</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .balance-page { min-height: 100vh; padding: 48px 0 80px; }
+    .balance-shell { width: min(calc(100% - 40px), 1180px); margin: 0 auto; }
+    .balance-back { display: inline-flex; gap: 10px; color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .balance-back:hover, .balance-back:focus-visible { color: var(--paper); }
+    .balance-header { max-width: 720px; margin: 58px 0 46px; }
+    .balance-kicker { margin: 0 0 14px; color: var(--red); font-size: 11px; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
+    .balance-header h1 { margin: 0; color: var(--paper); font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: clamp(3.5rem, 9vw, 7rem); letter-spacing: -.055em; line-height: .84; text-transform: uppercase; }
+    .balance-header h1 span { color: var(--red); }
+    .balance-header p { max-width: 620px; margin: 22px 0 0; color: var(--muted); font-size: 18px; line-height: 1.5; }
+    .balance-options { display: grid; gap: 28px; }
+    .balance-option { padding: 22px; border: 1px solid var(--line); background: rgba(21,23,24,.84); }
+    .balance-option-head { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin-bottom: 22px; }
+    .balance-option-head h2 { margin: 0; color: var(--paper); font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -.045em; line-height: .9; text-transform: uppercase; }
+    .balance-option-head p { max-width: 360px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; text-align: right; }
+    .balance-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .balance-card { min-height: 430px; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(244,241,234,.16); }
+    .balance-card-yog { color: var(--paper); background: #101112; border-top: 4px solid var(--paper); }
+    .balance-card-bone { color: var(--ink); background: var(--paper); border-top: 4px solid var(--red); }
+    .balance-card-label { padding: 20px 20px 0; color: currentColor; opacity: .62; font-size: 10px; font-weight: 900; letter-spacing: .16em; }
+    .balance-art { width: min(100%, 280px); height: 280px; flex: 0 0 280px; display: flex; align-items: flex-end; justify-content: center; margin: 6px auto 0; overflow: hidden; border-radius: 50%; background: rgba(9,9,9,.06); }
+    .balance-card-yog .balance-art { background: rgba(244,241,234,.08); }
+    .balance-art img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; transform-origin: center bottom; }
+    .balance-copy { padding: 12px 20px 22px; }
+    .balance-copy h3 { margin: 0; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: clamp(2.8rem, 6vw, 4.6rem); letter-spacing: -.055em; line-height: .84; text-transform: uppercase; }
+    .balance-copy p { max-width: 240px; margin: 14px 0 0; color: rgba(9,9,9,.68); font-size: 14px; line-height: 1.4; }
+    .balance-card-yog .balance-copy p { color: rgba(244,241,234,.76); }
+    .option-scale-b .balance-card-bone .balance-art img { transform: scale(.9); }
+    .option-scale-c .balance-card-bone .balance-art img { transform: scale(.84) translateY(2%); }
+    .option-scale-d .balance-card-yog .balance-art img { transform: scale(1.04); }
+    .option-scale-d .balance-card-bone .balance-art img { transform: scale(.88); }
+    .option-scale-e .balance-art { height: 250px; }
+    .option-scale-e .balance-card-yog .balance-art img { transform: scale(1.06); }
+    .option-scale-e .balance-card-bone .balance-art img { transform: scale(.9) translateY(1%); }
+    .balance-note { margin: 36px 0 0; color: var(--muted); font-size: 13px; }
+    @media (max-width: 640px) {
+      .balance-page { padding-top: 28px; }
+      .balance-header { margin-top: 44px; }
+      .balance-header p { font-size: 16px; }
+      .balance-option { padding: 16px; }
+      .balance-option-head { align-items: flex-start; flex-direction: column; gap: 12px; }
+      .balance-option-head p { text-align: left; }
+      .balance-pair { gap: 8px; }
+      .balance-card { min-height: 320px; }
+      .balance-card-label { padding: 14px 12px 0; font-size: 8px; }
+      .balance-art { width: min(100%, 190px); height: 190px; flex-basis: 190px; margin-inline: auto; }
+      .balance-copy { padding: 8px 12px 16px; }
+      .balance-copy h3 { font-size: clamp(2rem, 9vw, 3.5rem); }
+      .balance-copy p { font-size: 12px; }
+      .option-scale-e .balance-art { width: min(100%, 175px); height: 175px; flex-basis: 175px; }
+    }
+  </style>
+</head>
+<body class="balance-page">
+  <div class="balance-shell">
+    <a class="balance-back" href="/#hosts">← Back to Hosts</a>
+    <header class="balance-header">
+      <p class="balance-kicker">Host portrait directions</p>
+      <h1>Make the<br /><span>pair feel even.</span></h1>
+      <p>Five sizing treatments using the same transparent portraits. The Bone is naturally larger inside the source canvas, so each option tests a different way to bring the two visual weights together.</p>
+    </header>
+
+    <main class="balance-options">
+      <section class="balance-option option-scale-a" aria-labelledby="option-a">
+        <div class="balance-option-head"><h2 id="option-a">01 · Current frame</h2><p>Baseline: both portraits use the same image frame with no extra scaling.</p></div>
+        <div class="balance-pair">
+          <article class="balance-card balance-card-yog"><div class="balance-card-label">HOST · 01</div><div class="balance-art"><img src="/assets/hosts/yog-upper-body.png" alt="Yog portrait" /></div><div class="balance-copy"><h3>Yog</h3><p>Fast takes, big energy, and never short on a point of view.</p></div></article>
+          <article class="balance-card balance-card-bone"><div class="balance-card-label">HOST · 02</div><div class="balance-art"><img src="/assets/hosts/the-bone-upper-body.png" alt="The Bone portrait" /></div><div class="balance-copy"><h3>The Bone</h3><p>Game-day instincts, sharp reads, and a take ready for overtime.</p></div></article>
+        </div>
+      </section>
+
+      <section class="balance-option option-scale-b" aria-labelledby="option-b">
+        <div class="balance-option-head"><h2 id="option-b">02 · Bone minus 10%</h2><p>A light correction that keeps The Bone prominent but brings the shoulders closer to Yog’s footprint.</p></div>
+        <div class="balance-pair">
+          <article class="balance-card balance-card-yog"><div class="balance-card-label">HOST · 01</div><div class="balance-art"><img src="/assets/hosts/yog-upper-body.png" alt="Yog portrait" /></div><div class="balance-copy"><h3>Yog</h3><p>Fast takes, big energy, and never short on a point of view.</p></div></article>
+          <article class="balance-card balance-card-bone"><div class="balance-card-label">HOST · 02</div><div class="balance-art"><img src="/assets/hosts/the-bone-upper-body.png" alt="The Bone portrait" /></div><div class="balance-copy"><h3>The Bone</h3><p>Game-day instincts, sharp reads, and a take ready for overtime.</p></div></article>
+        </div>
+      </section>
+
+      <section class="balance-option option-scale-c" aria-labelledby="option-c">
+        <div class="balance-option-head"><h2 id="option-c">03 · Bone minus 16%</h2><p>A stronger match if the priority is equal head-and-shoulder presence at a glance.</p></div>
+        <div class="balance-pair">
+          <article class="balance-card balance-card-yog"><div class="balance-card-label">HOST · 01</div><div class="balance-art"><img src="/assets/hosts/yog-upper-body.png" alt="Yog portrait" /></div><div class="balance-copy"><h3>Yog</h3><p>Fast takes, big energy, and never short on a point of view.</p></div></article>
+          <article class="balance-card balance-card-bone"><div class="balance-card-label">HOST · 02</div><div class="balance-art"><img src="/assets/hosts/the-bone-upper-body.png" alt="The Bone portrait" /></div><div class="balance-copy"><h3>The Bone</h3><p>Game-day instincts, sharp reads, and a take ready for overtime.</p></div></article>
+        </div>
+      </section>
+
+      <section class="balance-option option-scale-d" aria-labelledby="option-d">
+        <div class="balance-option-head"><h2 id="option-d">04 · Shared visual weight</h2><p>Yog gets a subtle lift while The Bone comes down, giving the pair the closest matched presence.</p></div>
+        <div class="balance-pair">
+          <article class="balance-card balance-card-yog"><div class="balance-card-label">HOST · 01</div><div class="balance-art"><img src="/assets/hosts/yog-upper-body.png" alt="Yog portrait" /></div><div class="balance-copy"><h3>Yog</h3><p>Fast takes, big energy, and never short on a point of view.</p></div></article>
+          <article class="balance-card balance-card-bone"><div class="balance-card-label">HOST · 02</div><div class="balance-art"><img src="/assets/hosts/the-bone-upper-body.png" alt="The Bone portrait" /></div><div class="balance-copy"><h3>The Bone</h3><p>Game-day instincts, sharp reads, and a take ready for overtime.</p></div></article>
+        </div>
+      </section>
+
+      <section class="balance-option option-scale-e" aria-labelledby="option-e">
+        <div class="balance-option-head"><h2 id="option-e">05 · Compact lockup</h2><p>Shorter art windows and restrained scaling make the pair feel like a deliberate team mark.</p></div>
+        <div class="balance-pair">
+          <article class="balance-card balance-card-yog"><div class="balance-card-label">HOST · 01</div><div class="balance-art"><img src="/assets/hosts/yog-upper-body.png" alt="Yog portrait" /></div><div class="balance-copy"><h3>Yog</h3><p>Fast takes, big energy, and never short on a point of view.</p></div></article>
+          <article class="balance-card balance-card-bone"><div class="balance-card-label">HOST · 02</div><div class="balance-art"><img src="/assets/hosts/the-bone-upper-body.png" alt="The Bone portrait" /></div><div class="balance-copy"><h3>The Bone</h3><p>Game-day instincts, sharp reads, and a take ready for overtime.</p></div></article>
+        </div>
+      </section>
+    </main>
+    <p class="balance-note">Mockup only — the live Hosts cards have not been changed.</p>
+  </div>
+</body>
+</html>
