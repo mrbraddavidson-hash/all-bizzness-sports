@@ -9,6 +9,7 @@ pages that use the shared footer:
 - `dist/about/index.html`
 - `dist/contact/index.html`
 - `dist/privacy/index.html`
+- `dist/subprocessors/index.html`
 - `dist/terms/index.html`
 
 Run this from the project root after changing the partial:

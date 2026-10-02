@@ -40,6 +40,10 @@
   Content-Type: text/markdown; charset=utf-8
   Cache-Control: public, max-age=86400
 
+/index.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=86400
+
 /AGENTS.md
   Content-Type: text/markdown; charset=utf-8
   Cache-Control: public, max-age=86400

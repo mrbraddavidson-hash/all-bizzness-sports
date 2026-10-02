@@ -25,6 +25,7 @@
 - [About the show](https://all-bizzness-sports.pages.dev/about/)
 - [Contact the show](https://all-bizzness-sports.pages.dev/contact/)
 - [Privacy Policy](https://all-bizzness-sports.pages.dev/privacy/)
+- [Subprocessor disclosure](https://all-bizzness-sports.pages.dev/subprocessors/)
 - [Terms of Use](https://all-bizzness-sports.pages.dev/terms/)
 - [Facebook](https://www.facebook.com/profile.php?id=61593014556797)
 - [YouTube](https://www.youtube.com/@AllBizznessSports)

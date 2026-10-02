@@ -16,6 +16,7 @@ $pagePaths = @(
   (Join-Path $ProjectRoot 'dist/about/index.html'),
   (Join-Path $ProjectRoot 'dist/contact/index.html'),
   (Join-Path $ProjectRoot 'dist/privacy/index.html'),
+  (Join-Path $ProjectRoot 'dist/subprocessors/index.html'),
   (Join-Path $ProjectRoot 'dist/terms/index.html')
 )
 $startMarker = '<!-- BEGIN SITE FOOTER -->'
