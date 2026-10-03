@@ -82,6 +82,7 @@ button { font: inherit; }
 .header-cta:hover, .header-cta:focus-visible { background: var(--red); border-color: var(--red); }
 .header-cta span, .button span, .text-link span { font-size: 16px; line-height: 1; }
 .header-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 7px; }
+.header-live, .header-show-name { margin: 0; }
 .header-live { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .12em; line-height: 1.2; text-transform: uppercase; white-space: nowrap; }
 .header-live .pulse-dot { width: 7px; height: 7px; animation: header-live-pulse 1.4s ease-in-out infinite; }
 @keyframes header-live-pulse {
@@ -125,16 +126,16 @@ h1 em, h2 em { color: var(--red); font-style: normal; }
 .ticker-sequence { display: flex; align-items: stretch; flex: 0 0 auto; }
 .ticker-track.is-static { width: 100%; animation: none; }
 .ticker-card { min-height: 64px; display: flex; align-items: center; gap: 11px; padding: 10px 18px; border-right: 1px solid rgba(244,241,234,.22); font-size: 11px; white-space: nowrap; }
-.ticker-card-empty { width: 100%; justify-content: center; color: rgba(244,241,234,.82); font-size: 12px; white-space: normal; text-align: center; }
+.ticker-card-empty { width: 100%; justify-content: center; color: #fff; font-size: 12px; white-space: normal; text-align: center; }
 .ticker-badge { align-self: flex-start; padding: 3px 5px; color: var(--ink); background: var(--paper); font-size: 9px; font-weight: 900; letter-spacing: .08em; }
 .team-item { display: inline-flex; align-items: center; gap: 7px; font-weight: 900; letter-spacing: .05em; }
 .team-logo { width: 23px; height: 23px; object-fit: contain; }
-.score-divider { color: rgba(244,241,234,.68); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.score-divider { color: #fff; font-size: 10px; font-weight: 800; text-transform: uppercase; }
 .score { min-width: 2ch; margin-left: 2px; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 20px; line-height: 1; }
-.status { color: rgba(244,241,234,.78); font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.status { color: #fff; font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .status-live { color: #fff; }
-.status-pre { color: rgba(244,241,234,.7); }
-.status-final { color: rgba(244,241,234,.58); }
+.status-pre { color: #fff; }
+.status-final { color: rgba(255,255,255,.88); }
 @keyframes ticker-drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 .section { padding-top: 138px; padding-bottom: 138px; }
@@ -189,6 +190,7 @@ h2 span { color: var(--silver); }
 .host-card-dark .host-role { color: rgba(244,241,234,.7); }
 .host-card-art { position: relative; z-index: 1; width: min(100%, 230px); height: 190px; flex: 0 0 190px; display: flex; align-items: flex-end; justify-content: center; margin: 20px auto 0; overflow: hidden; border-radius: 50%; background: rgba(9,9,9,.06); pointer-events: none; }
 .host-card-dark .host-card-art { background: rgba(244,241,234,.08); }
+.host-card-art picture { display: block; width: 100%; height: 100%; }
 .host-card-art img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
 .host-card-yog .host-card-art img { transform: translateY(5%); }
 .host-card-bone .host-card-art img { transform: scale(.9); }
@@ -687,7 +689,7 @@ h2 span { color: var(--silver); }
 .sports-page .live-ticker {
   position: relative;
   border-color: rgba(244,241,234,.3);
-  background: var(--red);
+  background: var(--red-dark);
   box-shadow: 0 11px 0 rgba(141,20,33,.35);
 }
 .sports-page .live-ticker::after {
@@ -905,7 +907,7 @@ h2 span { color: var(--silver); }
 
 .sports-page .local-stamp {
   flex: 0 0 auto;
-  color: var(--red);
+  color: var(--red-dark);
   font-size: 11px;
   font-weight: 900;
   letter-spacing: .14em;
@@ -987,13 +989,13 @@ h2 span { color: var(--silver); }
 
 .sports-page .local-card-red {
   color: var(--paper);
-  background: var(--red);
+  background: var(--red-dark);
   border-color: var(--red);
 }
 
 .sports-page .local-card-red:hover,
 .sports-page .local-card-red:focus-visible {
-  background: #b91728;
+  background: #74101b;
 }
 
 .sports-page .local-card-outline {
@@ -1043,7 +1045,7 @@ h2 span { color: var(--silver); }
   gap: 9px;
   width: fit-content;
   padding-bottom: 6px;
-  color: var(--red);
+  color: #ff6b78;
   border-bottom: 1px solid currentColor;
   font-size: 11px;
   font-weight: 900;
@@ -1057,7 +1059,7 @@ h2 span { color: var(--silver); }
 }
 
 .sports-page .local-card-outline .local-card-link {
-  color: var(--red);
+  color: var(--red-dark);
 }
 
 .sports-page .local-pulse {
@@ -1071,7 +1073,7 @@ h2 span { color: var(--silver); }
 }
 
 .sports-page .local-pulse > span {
-  color: var(--red);
+  color: var(--red-dark);
   font-size: 10px;
   font-weight: 900;
   letter-spacing: .15em;
@@ -1088,7 +1090,7 @@ h2 span { color: var(--silver); }
 
 .sports-page .local-pulse a:hover,
 .sports-page .local-pulse a:focus-visible {
-  color: var(--red);
+  color: var(--red-dark);
 }
 
 .sports-page .local-note {
@@ -1169,6 +1171,8 @@ h2 span { color: var(--silver); }
   padding-top: 62px;
   padding-bottom: 92px;
 }
+
+.sports-page .hero-art { margin: 0; }
 
 .sports-page .hero-copy {
   max-width: 100%;

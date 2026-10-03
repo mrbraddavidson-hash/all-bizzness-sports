@@ -1,9 +1,9 @@
 const ENDPOINTS = [
-  { league: "NHL", url: "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard" },
-  { league: "MLB", url: "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard" },
-  { league: "NBA", url: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard" },
-  { league: "NFL", url: "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard" },
-  { league: "CFL", url: "https://site.api.espn.com/apis/site/v2/sports/football/cfl/scoreboard" }
+  { league: "NHL", url: "/api/scoreboard?league=nhl" },
+  { league: "MLB", url: "/api/scoreboard?league=mlb" },
+  { league: "NBA", url: "/api/scoreboard?league=nba" },
+  { league: "NFL", url: "/api/scoreboard?league=nfl" },
+  { league: "CFL", url: "/api/scoreboard?league=cfl" }
 ];
 
 const MAX_SCORE_AGE_MS = 36 * 60 * 60 * 1000;

@@ -29,3 +29,4 @@
 - [Terms of Use](https://all-bizzness-sports.pages.dev/terms/)
 - [Facebook](https://www.facebook.com/profile.php?id=61593014556797)
 - [YouTube](https://www.youtube.com/@AllBizznessSports)
+- [Machine-readable site summary](https://all-bizzness-sports.pages.dev/ai/summary.json)
