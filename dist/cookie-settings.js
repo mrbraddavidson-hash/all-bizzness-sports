@@ -15,6 +15,22 @@
     }
   };
 
+  const analyticsMeasurementId = "G-3ZNS2B38Q6";
+  const loadAnalytics = () => {
+    if (window.__allBizznessAnalyticsLoaded) return;
+    window.__allBizznessAnalyticsLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", analyticsMeasurementId, { anonymize_ip: true });
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${analyticsMeasurementId}`;
+    script.dataset.allBizznessAnalytics = "true";
+    document.head.appendChild(script);
+  };
+  if (readPreference() === "accepted") loadAnalytics();
+
   document.querySelectorAll("#year").forEach((year) => {
     year.textContent = String(new Date().getFullYear());
   });
@@ -37,13 +53,13 @@
         <button class="cookie-settings__close" type="button" data-cookie-close aria-label="Close cookie settings">×</button>
       </div>
       <h2 id="cookie-settings-title">Cookie settings.</h2>
-      <p>All Bizzness Sports currently uses no optional analytics or advertising cookies. The scoreboard may request game data from an external sports API, and your browser may retain ordinary hosting or security data.</p>
+      <p>All Bizzness Sports uses privacy-focused Cloudflare Web Analytics for technical traffic measurement. Optional Google Analytics helps us understand visits and only loads after you choose Accept. The scoreboard may request game data from an external sports API, and your browser may retain ordinary hosting or security data.</p>
       <p class="cookie-settings__status" role="status" aria-live="polite"></p>
       <div class="cookie-settings__actions">
         <button class="cookie-settings__button cookie-settings__button--secondary" type="button" data-cookie-reject>Reject optional cookies</button>
         <button class="cookie-settings__button" type="button" data-cookie-accept>Accept optional cookies</button>
       </div>
-      <p class="cookie-settings__note">Your choice is saved in this browser for this site. Accepting does not activate an analytics or advertising tracker that is not currently installed.</p>
+      <p class="cookie-settings__note">Your choice is saved in this browser for this site. You can change it any time through Cookie settings.</p>
     </section>
   `;
   document.body.append(dialog);
@@ -76,7 +92,9 @@
     if (!choice) return;
     const value = choice.hasAttribute("data-cookie-accept") ? "accepted" : "rejected";
     savePreference(value);
-    status.textContent = `Preference saved: ${value}. No optional tracker is active on this site.`;
+    if (value === "accepted") loadAnalytics();
+    status.textContent = `Preference saved: ${value}.`;
+    close();
   });
 
   dialog.addEventListener("keydown", (event) => {
@@ -97,4 +115,6 @@
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && !dialog.hidden) close();
   });
+
+  if (!readPreference()) open(null);
 })();
