@@ -13,7 +13,11 @@ const JSON_HEADERS = {
   "Access-Control-Allow-Origin": "https://all-bizzness-sports.pages.dev",
   "Vary": "Accept-Encoding, Origin",
   "X-Content-Type-Options": "nosniff",
+  "Strict-Transport-Security": "max-age=31536000",
+  "Content-Security-Policy": "default-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+  "X-Frame-Options": "DENY",
   "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Permissions-Policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), microphone=(), payment=(), usb=()",
   "Cross-Origin-Opener-Policy": "same-origin",
   "Cross-Origin-Resource-Policy": "same-origin"
 };

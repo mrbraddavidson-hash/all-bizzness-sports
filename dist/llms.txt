@@ -27,6 +27,8 @@
 - [Privacy Policy](https://allbizznesssports.com/privacy/)
 - [Subprocessor disclosure](https://allbizznesssports.com/subprocessors/)
 - [Terms of Use](https://allbizznesssports.com/terms/)
+- [Frequently asked questions](https://allbizznesssports.com/ai/faq.json)
+- [Security contact and policy](https://allbizznesssports.com/.well-known/security.txt)
 - [Facebook](https://www.facebook.com/profile.php?id=61593014556797)
 - [YouTube](https://www.youtube.com/@AllBizznessSports)
 - [Machine-readable site summary](https://allbizznesssports.com/ai/summary.json)

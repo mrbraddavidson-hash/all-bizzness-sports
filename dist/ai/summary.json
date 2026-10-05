@@ -9,6 +9,8 @@
     "website": "https://allbizznesssports.com/",
     "about": "https://allbizznesssports.com/about/",
     "contact": "https://allbizznesssports.com/contact/",
+    "faq": "https://allbizznesssports.com/ai/faq.json",
+    "security": "https://allbizznesssports.com/.well-known/security.txt",
     "facebook": "https://www.facebook.com/profile.php?id=61593014556797",
     "youtube": "https://www.youtube.com/@AllBizznessSports"
   },

@@ -1,0 +1,23 @@
+{
+  "name": "All Bizzness Sports",
+  "url": "https://allbizznesssports.com/about/#faq",
+  "language": "en-CA",
+  "questions": [
+    {
+      "question": "What is All Bizzness Sports?",
+      "answer": "All Bizzness Sports is a local-first sports podcast connecting community teams, regional hockey, major-league storylines, and the conversation around them."
+    },
+    {
+      "question": "Who hosts All Bizzness Sports?",
+      "answer": "All Bizzness Sports is hosted by Yog and The Bone."
+    },
+    {
+      "question": "Which communities does the show cover?",
+      "answer": "The site's local sports coverage includes Tweed, Hastings, Quinte, Frankford, Trenton, and Centre Hastings, along with nearby community sports."
+    },
+    {
+      "question": "Where can I follow the show?",
+      "answer": "Follow All Bizzness Sports through its official Facebook page and YouTube channel, linked from the site's contact page."
+    }
+  ]
+}
