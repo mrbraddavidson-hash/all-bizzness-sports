@@ -699,8 +699,7 @@ h2 span { color: var(--silver); }
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: .28;
-  background: repeating-linear-gradient(116deg, transparent 0 50px, rgba(9,9,9,.3) 51px 54px, transparent 55px 108px);
+  opacity: 0;
 }
 .sports-page .intro {
   position: relative;
