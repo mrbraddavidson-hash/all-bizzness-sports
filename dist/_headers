@@ -1,5 +1,4 @@
 /*
-  Cache-Control: public, max-age=300
   Access-Control-Allow-Origin: https://allbizznesssports.com
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
@@ -10,6 +9,30 @@
   Vary: Accept-Encoding
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
+
+/
+  Cache-Control: public, max-age=300
+
+/index.html
+  Cache-Control: public, max-age=300
+
+/404.html
+  Cache-Control: public, max-age=300
+
+/about/*
+  Cache-Control: public, max-age=300
+
+/contact/*
+  Cache-Control: public, max-age=300
+
+/privacy/*
+  Cache-Control: public, max-age=300
+
+/terms/*
+  Cache-Control: public, max-age=300
+
+/subprocessors/*
+  Cache-Control: public, max-age=300
 
 /mockups/*
   X-Robots-Tag: noindex, nofollow, noarchive
