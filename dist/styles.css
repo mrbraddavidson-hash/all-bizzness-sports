@@ -192,8 +192,7 @@ h2 span { color: var(--silver); }
 .host-card-dark .host-card-art { background: rgba(244,241,234,.08); }
 .host-card-art picture { display: block; width: 100%; height: 100%; border-radius: inherit; background: var(--paper); }
 .host-card-dark .host-card-art picture { background: #101112; }
-.host-card-art img { --host-outline: rgba(9,9,9,.86); display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; transform-origin: center; clip-path: ellipse(50% 50% at 50% 50%); -webkit-clip-path: ellipse(50% 50% at 50% 50%); filter: drop-shadow(1px 0 0 var(--host-outline)) drop-shadow(-1px 0 0 var(--host-outline)) drop-shadow(0 1px 0 var(--host-outline)) drop-shadow(0 -1px 0 var(--host-outline)) drop-shadow(0 3px 4px rgba(9,9,9,.16)); }
-.host-card-dark .host-card-art img { --host-outline: rgba(244,241,234,.9); }
+.host-card-art img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; transform-origin: center; clip-path: ellipse(50% 50% at 50% 50%); -webkit-clip-path: ellipse(50% 50% at 50% 50%); filter: drop-shadow(0 3px 4px rgba(9,9,9,.16)); }
 .host-card-yog .host-card-art img { transform: scale(.98); }
 .host-card-bone .host-card-art img { transform: scale(.92); }
 .host-card-copy { position: relative; z-index: 2; max-width: none; margin-top: 0; padding-top: 16px; }
