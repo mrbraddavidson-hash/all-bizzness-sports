@@ -1800,14 +1800,6 @@ h2 span { color: var(--silver); }
   font-size: 16px;
   line-height: 1.55;
 }
-.episodes-source-note {
-  max-width: 720px;
-  margin: 42px 0 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.55;
-}
-.episodes-source-note span,
 .episode-card-description span {
   display: block;
   margin-bottom: 7px;
@@ -1879,7 +1871,6 @@ h2 span { color: var(--silver); }
 
 @media (max-width: 640px) {
   .episodes-heading { gap: 22px; }
-  .episodes-source-note { margin-top: 30px; }
   .episode-grid { grid-template-columns: 1fr; margin-top: 42px; }
   .episode-card-description { min-height: 0; }
 }
