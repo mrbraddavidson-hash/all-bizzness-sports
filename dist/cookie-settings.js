@@ -29,6 +29,18 @@
     script.dataset.allBizznessAnalytics = "true";
     document.head.appendChild(script);
   };
+  const removeAnalytics = () => {
+    document.querySelectorAll("script[data-all-bizzness-analytics]").forEach((script) => script.remove());
+    document.cookie.split(";").forEach((entry) => {
+      const name = entry.trim().split("=", 1)[0];
+      if (/^_(?:ga|gid|gat)(?:_|$)/.test(name)) {
+        document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax`;
+      }
+    });
+    window.dataLayer = [];
+    window.gtag = undefined;
+    window.__allBizznessAnalyticsLoaded = false;
+  };
   if (readPreference() === "accepted") loadAnalytics();
 
   document.querySelectorAll("#year").forEach((year) => {
@@ -93,6 +105,7 @@
     const value = choice.hasAttribute("data-cookie-accept") ? "accepted" : "rejected";
     savePreference(value);
     if (value === "accepted") loadAnalytics();
+    else removeAnalytics();
     status.textContent = `Preference saved: ${value}.`;
     close();
   });
