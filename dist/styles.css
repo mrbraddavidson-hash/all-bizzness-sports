@@ -1768,3 +1768,119 @@ h2 span { color: var(--silver); }
   .legal-copy p,
   .legal-copy li { font-size: 16px; }
 }
+
+/* Episodes */
+.sports-page .episodes {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(244,241,234,.14);
+  border-bottom: 1px solid rgba(244,241,234,.14);
+  background: linear-gradient(116deg, transparent 0 68%, rgba(239,30,50,.08) 68.2% 69%, transparent 69.2%), var(--panel);
+}
+.sports-page .episodes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 8%;
+  width: 28%;
+  height: 3px;
+  background: var(--red);
+  transform: skew(-18deg);
+}
+.episodes-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 360px);
+  align-items: end;
+  gap: 48px;
+}
+.episodes-heading h2 { color: var(--paper); }
+.episodes-lede {
+  max-width: 360px;
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.episodes-source-note {
+  max-width: 720px;
+  margin: 42px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.episodes-source-note span,
+.episode-card-description span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.episode-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 58px;
+}
+.episode-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--ink-soft);
+}
+.episode-embed {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-bottom: 1px solid var(--line);
+}
+.episode-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.episode-card-body { padding: 20px; }
+.episode-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.episode-card-meta span { color: var(--red); white-space: nowrap; }
+.episode-card h3 {
+  color: var(--paper);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  letter-spacing: -.04em;
+  line-height: .9;
+}
+.episode-card-description {
+  min-height: 76px;
+  margin: 18px 0 22px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.episode-card .text-link { font-size: 11px; }
+
+@media (max-width: 900px) {
+  .episodes-heading { grid-template-columns: 1fr; gap: 28px; }
+  .episodes-lede { max-width: 520px; }
+  .episode-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .episodes-heading { gap: 22px; }
+  .episodes-source-note { margin-top: 30px; }
+  .episode-grid { grid-template-columns: 1fr; margin-top: 42px; }
+  .episode-card-description { min-height: 0; }
+}

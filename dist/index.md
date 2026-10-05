@@ -8,6 +8,10 @@ The show connects community teams, regional hockey, and big-league storylines ar
 
 The public sports orbit on the site includes the Frankford Huskies, Trenton Golden Hawks, Tweed Hawks, Tweed Oil Kings, Land O’Lakes Curling Club, Centre Hastings Grizzlies, Tweed & District Figure Skating, and Fleming Phoenix.
 
+## Episodes
+
+The homepage embeds the nine current uploads from the official [All Bizzness Sports YouTube channel](https://www.youtube.com/@AllBizznessSports). YouTube currently provides no written descriptions for these uploads; the homepage preserves each upload title, date, duration, and original video link.
+
 ## Official pages
 
 - [About the show](https://allbizznesssports.com/about/)
