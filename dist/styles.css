@@ -691,7 +691,7 @@ h2 span { color: var(--silver); }
 .sports-page .live-ticker {
   position: relative;
   border-color: rgba(244,241,234,.3);
-  background: var(--red-dark);
+  background: var(--red);
   box-shadow: 0 11px 0 rgba(141,20,33,.35);
 }
 .sports-page .live-ticker::after {
