@@ -2,21 +2,21 @@
   "name": "All Bizzness Sports",
   "alternateName": "All Bizzness Sports Podcast",
   "description": "A local-first sports podcast hosted by Yog and The Bone, connecting community sports, regional hockey, and big-league storylines.",
-  "url": "https://all-bizzness-sports.pages.dev/",
+  "url": "https://allbizznesssports.com/",
   "language": "en-CA",
   "areaServed": ["Tweed", "Hastings", "Quinte", "Frankford", "Trenton", "Centre Hastings"],
   "officialLinks": {
-    "website": "https://all-bizzness-sports.pages.dev/",
-    "about": "https://all-bizzness-sports.pages.dev/about/",
-    "contact": "https://all-bizzness-sports.pages.dev/contact/",
+    "website": "https://allbizznesssports.com/",
+    "about": "https://allbizznesssports.com/about/",
+    "contact": "https://allbizznesssports.com/contact/",
     "facebook": "https://www.facebook.com/profile.php?id=61593014556797",
     "youtube": "https://www.youtube.com/@AllBizznessSports"
   },
   "authoritativePages": [
-    "https://all-bizzness-sports.pages.dev/",
-    "https://all-bizzness-sports.pages.dev/about/",
-    "https://all-bizzness-sports.pages.dev/contact/",
-    "https://all-bizzness-sports.pages.dev/privacy/",
-    "https://all-bizzness-sports.pages.dev/terms/"
+    "https://allbizznesssports.com/",
+    "https://allbizznesssports.com/about/",
+    "https://allbizznesssports.com/contact/",
+    "https://allbizznesssports.com/privacy/",
+    "https://allbizznesssports.com/terms/"
   ]
 }

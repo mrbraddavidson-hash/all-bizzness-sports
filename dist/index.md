@@ -10,10 +10,10 @@ The public sports orbit on the site includes the Frankford Huskies, Trenton Gold
 
 ## Official pages
 
-- [About the show](https://all-bizzness-sports.pages.dev/about/)
-- [Contact the show](https://all-bizzness-sports.pages.dev/contact/)
-- [Privacy Policy](https://all-bizzness-sports.pages.dev/privacy/)
-- [Subprocessor disclosure](https://all-bizzness-sports.pages.dev/subprocessors/)
-- [Terms of Use](https://all-bizzness-sports.pages.dev/terms/)
+- [About the show](https://allbizznesssports.com/about/)
+- [Contact the show](https://allbizznesssports.com/contact/)
+- [Privacy Policy](https://allbizznesssports.com/privacy/)
+- [Subprocessor disclosure](https://allbizznesssports.com/subprocessors/)
+- [Terms of Use](https://allbizznesssports.com/terms/)
 - [Facebook](https://www.facebook.com/profile.php?id=61593014556797)
 - [YouTube](https://www.youtube.com/@AllBizznessSports)

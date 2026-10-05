@@ -21,12 +21,12 @@
 
 ## Official links
 
-- [All Bizzness Sports website](https://all-bizzness-sports.pages.dev/)
-- [About the show](https://all-bizzness-sports.pages.dev/about/)
-- [Contact the show](https://all-bizzness-sports.pages.dev/contact/)
-- [Privacy Policy](https://all-bizzness-sports.pages.dev/privacy/)
-- [Subprocessor disclosure](https://all-bizzness-sports.pages.dev/subprocessors/)
-- [Terms of Use](https://all-bizzness-sports.pages.dev/terms/)
+- [All Bizzness Sports website](https://allbizznesssports.com/)
+- [About the show](https://allbizznesssports.com/about/)
+- [Contact the show](https://allbizznesssports.com/contact/)
+- [Privacy Policy](https://allbizznesssports.com/privacy/)
+- [Subprocessor disclosure](https://allbizznesssports.com/subprocessors/)
+- [Terms of Use](https://allbizznesssports.com/terms/)
 - [Facebook](https://www.facebook.com/profile.php?id=61593014556797)
 - [YouTube](https://www.youtube.com/@AllBizznessSports)
-- [Machine-readable site summary](https://all-bizzness-sports.pages.dev/ai/summary.json)
+- [Machine-readable site summary](https://allbizznesssports.com/ai/summary.json)
