@@ -10,7 +10,7 @@ The public sports orbit on the site includes the Frankford Huskies, Trenton Gold
 
 ## Episodes
 
-The homepage embeds the nine current uploads from the official [All Bizzness Sports YouTube channel](https://www.youtube.com/@AllBizznessSports). YouTube currently provides no written descriptions for these uploads; the homepage preserves each upload title, date, duration, and original video link.
+The homepage embeds the nine current uploads from the official [All Bizzness Sports YouTube channel](https://www.youtube.com/@AllBizznessSports). YouTube currently provides no written descriptions for these uploads, so each card includes an editorial summary based on a local transcription of the conversation, while preserving the exact upload title, date, duration, and original video link.
 
 ## Official pages
 
