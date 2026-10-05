@@ -456,6 +456,7 @@ h2 span { color: var(--silver); }
 .sports-page {
   --red: #ef1e32;
   --red-dark: #8d1421;
+  --ticker-red: #c51b2f;
   --line: rgba(244, 241, 234, .2);
   background:
     linear-gradient(116deg, transparent 0 46%, rgba(239, 30, 50, .16) 46.2% 47.7%, transparent 47.9%),
@@ -691,7 +692,7 @@ h2 span { color: var(--silver); }
 .sports-page .live-ticker {
   position: relative;
   border-color: rgba(244,241,234,.3);
-  background: var(--red);
+  background: var(--ticker-red);
   box-shadow: 0 11px 0 rgba(141,20,33,.35);
 }
 .sports-page .live-ticker::after {
