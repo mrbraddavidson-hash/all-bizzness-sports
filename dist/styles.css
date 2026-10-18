@@ -1874,3 +1874,88 @@ h2 span { color: var(--silver); }
   .episode-grid { grid-template-columns: 1fr; margin-top: 42px; }
   .episode-card-description { min-height: 0; }
 }
+
+/* Local area board */
+.sports-page .local-areas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.sports-page .local-area-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sports-page .local-area-filter {
+  appearance: none;
+  min-height: 38px;
+  padding: 8px 12px;
+  color: rgba(9, 9, 9, .72);
+  background: transparent;
+  border: 1px solid rgba(9, 9, 9, .22);
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .09em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.sports-page .local-area-filter:hover,
+.sports-page .local-area-filter:focus-visible {
+  color: var(--ink);
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+
+.sports-page .local-area-filter.is-active {
+  color: var(--paper);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.sports-page .local-area-status {
+  flex: 0 0 auto;
+  margin: 0;
+  color: rgba(9, 9, 9, .54);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.sports-page .local-card[hidden] {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .sports-page .local-areas {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .sports-page .local-area-filters {
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 2px 0 6px;
+    scrollbar-width: thin;
+  }
+
+  .sports-page .local-area-filter {
+    flex: 0 0 auto;
+  }
+
+  .sports-page .local-area-status {
+    text-align: left;
+  }
+}
